@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedLearn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="brand">
+        <span id="botEmoji" class="emoji"></span>
+        <div>
+          <h1 id="botName"></h1>
+          <p id="botTagline"></p>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="keyBtn" type="button">API key</button>
+        <button id="newBtn" type="button">New chat</button>
+      </div>
+    </header>
+
+    <main id="chat" aria-live="polite"></main>
+
+    <div id="starters"></div>
+
+    <div class="composer">
+      <textarea id="input" rows="1" placeholder="Type your question..."></textarea>
+      <button id="sendBtn" type="button">Send</button>
+    </div>
+  </div>
+
+  <dialog id="keyDialog">
+    <h2>Gemini API key</h2>
+    <p>Paste your key below. It stays in your browser only.</p>
+    <input id="keyInput" type="password" placeholder="Paste key here" autocomplete="off">
+    <label class="remember">
+      <input id="rememberBox" type="checkbox"> Remember on this device
+    </label>
+    <div class="dialog-buttons">
+      <button id="keyCancel" type="button">Cancel</button>
+      <button id="keySave" type="button">Save</button>
+    </div>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
