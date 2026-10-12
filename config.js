@@ -1,5 +1,5 @@
 window.CONFIG = {
-  MODEL: "gemini-2.5-flash",
+  MODEL: "gemini-3.8-flash",
 
   WELCOME: "Hi there! 👋 I'm MedLearn, your study buddy for all things health. Ask me anything, or pick a starter below to get going.",
 
