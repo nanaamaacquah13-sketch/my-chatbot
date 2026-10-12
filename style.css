@@ -1,21 +1,25 @@
 :root {
   --brand: #BA0C2F;
-  --bg: #f6f6f8;
+  --bg: #fdeef1;
   --card: #ffffff;
   --text: #1d1d22;
   --muted: #6b6b76;
   --border: #e2e2e8;
   --user-text: #ffffff;
+  --error-bg: #fff0f0;
+  --error-text: #8a1020;
+  --error-border: #f3b5bd;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #15151a;
-    --card: #1f1f26;
-    --text: #ececf1;
-    --muted: #a0a0ab;
-    --border: #33333d;
-  }
+[data-theme="dark"] {
+  --bg: #15151a;
+  --card: #1f1f26;
+  --text: #ececf1;
+  --muted: #a0a0ab;
+  --border: #33333d;
+  --error-bg: #3a1a20;
+  --error-text: #ffb3be;
+  --error-border: #6b2a35;
 }
 
 * { box-sizing: border-box; }
@@ -26,6 +30,7 @@ html, body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
+  transition: background 0.3s, color 0.3s;
 }
 
 .app {
@@ -81,7 +86,7 @@ header p { margin: 0; font-size: 0.8rem; opacity: 0.9; }
 }
 .bubble.bot { align-self: flex-start; background: var(--bg); border: 1px solid var(--border); }
 .bubble.user { align-self: flex-end; background: var(--brand); color: var(--user-text); }
-.bubble.error { align-self: flex-start; background: #fff0f0; color: #8a1020; border: 1px solid #f3b5bd; }
+.bubble.error { align-self: flex-start; background: var(--error-bg); color: var(--error-text); border: 1px solid var(--error-border); }
 .bubble ul { margin: 6px 0; padding-left: 20px; }
 
 .dots span {
