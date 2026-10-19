@@ -36,5 +36,30 @@ SAFETY
 - If a student describes a real symptom or personal medical concern, encourage them to talk to a doctor, nurse or pharmacist.
 - If someone describes an emergency, tell them to contact local emergency services right away.
 
-Stay on health, medicine and study topics. If a question is unrelated, gently steer the conversation back.`
+Stay on health, medicine and study topics. If a question is unrelated, gently steer the conversation back.`,
+
+  // ================== YOUR NOTES (RAG) ==================
+
+  // true  = the chatbot answers using your notes file
+  // false = the chatbot works like before, without notes
+  useKnowledge: true,
+
+  // The name of your notes file. It must be in the same folder as index.html.
+  knowledgeFile: "knowledge.md",
+
+  // How the chatbot finds the right notes:
+  //   "meaning"  = smart search that understands what a question is about (needs your API key)
+  //   "keywords" = simple search that looks for the same words
+  // If "meaning" fails, the chatbot switches to "keywords" by itself.
+  searchMethod: "meaning",
+
+  // How many notes are sent to the chatbot with each question (3 is a good start)
+  topK: 3,
+
+  // The Google model that turns text into numbers for the meaning search.
+  // Only change this if Google retires it.
+  embeddingModel: "gemini-embedding-2",
+
+  // Extra instructions that tell the chatbot how to use your notes
+  knowledgeRules: "You will receive NOTES from my knowledge file along with each question. If the notes answer the question, base your answer on them and cite the note numbers like [1]. If they don't, begin with 'I couldn't find that in my notes.' Never invent facts, dates, rules or policies that are not in the notes."
 };
