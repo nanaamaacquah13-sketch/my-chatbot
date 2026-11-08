@@ -42,3 +42,35 @@ Students may use laptops in class for notetaking or for in-class activities when
 
 ## Where can I find disability accommodations and well-being support at UGA?
 Students who plan to request accommodations for a disability should register with Accessibility and Testing, located in Clark Howell Hall (accessibility.uga.edu). For well-being support, UGA lists these resources: Well-being Resources (well-being.uga.edu), Student Care & Outreach (sco.uga.edu), the University Health Center (healthcenter.uga.edu), Counseling and Psychiatric Services (caps.uga.edu, which also offers 24/7 crisis support), and Health Promotion/Fontaine Center (healthpromotion.uga.edu). Student Care & Outreach helps students navigate difficult circumstances by connecting them with the right resources and services. It also runs the Embark@UGA program for students experiencing or who have experienced homelessness, foster care, or housing insecurity. Free digital well-being resources are available through the UGA app.
+## What is the case study on embolization for uterine fibroids with bleeding and severe anemia?
+This Obstetrics and Gynecology case study is titled "Embolization to Treat Uterine Fibroids with Bleeding and Severe Anemia." It describes a 45-year-old female Jehovah's Witness patient with a history of uterine fibroids and severe menorrhagia. She was treated with Lupron, intravenous iron sucrose, darbepoetin alpha, and oral iron, and later had a uterine artery fibroid embolization performed in interventional radiology. One month after discharge, at a follow-up visit, her hemoglobin level was 8.0.
+
+## What symptoms and medical history did the patient have?
+The patient was a 45-year-old woman who presented with shortness of breath, fatigue and weakness. She had a history of uterine fibroids and severe menorrhagia. She also had a history of deep venous thrombosis (DVT) and pulmonary emboli (PE). She was admitted with iron-deficient anemia for workup and treatment. She was a Jehovah's Witness.
+
+## What did Hematology do in this case?
+After a Hematology consult, the Coumadin the patient had been taking for her history of DVT and PE was discontinued. After her first hospital stay she was also followed in the Hematology clinic. At a follow-up visit in the Hematology Clinic one month after her second discharge, her hemoglobin level was 8.0. At that time she was off Lupron and continuing her oral iron supplements.
+
+## How were the uterine fibroids diagnosed, and why wasn't a hysterectomy done right away?
+Gynecology was consulted and the patient was diagnosed with multiple large fibroids after a transvaginal ultrasound examination. It was determined that a hysterectomy may be needed. However, her hemoglobin level of 3.8 g/dL on admission was too low for surgery. She was then started on Lupron, along with intravenous iron sucrose and darbepoetin alpha.
+
+## What is Lupron and how was it used in this case?
+Lupron (leuprolide acetate) is a long-acting (depot) injection medication that suppresses secretion of the gonadotropins luteinizing hormone (LH) and follicle-stimulating hormone (FSH). It is helpful in cessation of hemorrhage from uterine fibroids. The patient was started on Lupron during her first admission and sent home on monthly Lupron injections. When she later missed one treatment in her Lupron regimen, she started to bleed again. By the final follow-up she was off Lupron.
+
+## How was the patient's anemia treated during her first hospital stay?
+Before this treatment, the Coumadin she had been taking was discontinued after a Hematology consult. She then received daily intravenous iron sucrose at 200 mg and weekly intravenous darbepoetin alpha at 25 mcg. She was also started on Lupron. After 3 weeks her hemoglobin level was 5.5 g/dL. She was sent home on monthly Lupron injections and oral iron supplements, and was followed in the Hematology clinic.
+
+## What happened when the patient was readmitted four months later?
+Four months later she was admitted again with shortness of breath, fatigue and weakness. Her hemoglobin level was 3.8 g/dL. She had missed one treatment in her Lupron regimen and had started to bleed again. Her ferritin level was 9 ng/mL, while the normal level for women is 18-160. On her third hospital day she was taken to interventional radiology for a uterine artery fibroid embolization.
+
+## How did the patient's hemoglobin level change over time?
+On her first admission, her hemoglobin level was 3.8 g/dL, which was too low for surgery. After 3 weeks of treatment it was 5.5 g/dL. At readmission four months later it was 3.8 g/dL again. She was discharged two days after the embolization with a hemoglobin level of 4.9. One month later, at a follow-up visit in the Hematology Clinic, it was 8.0.
+
+## When was the uterine artery fibroid embolization done and what happened afterward?
+On her third hospital day of the second admission, the patient was taken to interventional radiology for a uterine artery fibroid embolization. Two days later she was discharged with a hemoglobin level of 4.9 on oral iron sulfate, 325 mg twice a day. The case study page includes an illustration showing uterine artery embolization.
+
+## What was the outcome for the patient?
+One month after discharge, at a follow-up visit in the Hematology Clinic, the patient's hemoglobin level was 8.0. She was off Lupron and continuing her oral iron supplements. She had been discharged from her second hospital stay two days after the embolization, with a hemoglobin level of 4.9, on oral iron sulfate 325 mg twice a day.
+
+## What medications and doses were used in this case?
+Coumadin, taken for her DVT and PE history, was discontinued. Lupron (leuprolide acetate) was given as a long-acting depot injection, monthly after discharge. Intravenous iron sucrose was given daily at 200 mg, and darbepoetin alpha was given intravenously weekly at 25 mcg. She went home on oral iron supplements, and after the embolization she was discharged on oral iron sulfate, 325 mg twice a day.
