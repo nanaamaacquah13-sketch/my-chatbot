@@ -45,32 +45,38 @@ Students who plan to request accommodations for a disability should register wit
 ## What is the case study on embolization for uterine fibroids with bleeding and severe anemia?
 This Obstetrics and Gynecology case study is titled "Embolization to Treat Uterine Fibroids with Bleeding and Severe Anemia." It describes a 45-year-old female Jehovah's Witness patient with a history of uterine fibroids and severe menorrhagia. She was treated with Lupron, intravenous iron sucrose, darbepoetin alpha, and oral iron, and later had a uterine artery fibroid embolization performed in interventional radiology. One month after discharge, at a follow-up visit, her hemoglobin level was 8.0.
 
-## What symptoms and medical history did the patient have?
-The patient was a 45-year-old woman who presented with shortness of breath, fatigue and weakness. She had a history of uterine fibroids and severe menorrhagia. She also had a history of deep venous thrombosis (DVT) and pulmonary emboli (PE). She was admitted with iron-deficient anemia for workup and treatment. She was a Jehovah's Witness.
+## What should a case study title look like?
+The sample title names the treatment first and the problem second: "Embolization to Treat Uterine Fibroids with Bleeding and Severe Anemia." Use the same pattern: the intervention, then "to Treat", then the condition and its complications. The page itself is labeled by specialty, as in "Case Study: Obstetrics and Gynecology," because the cases are organized by a wide variety of medical and surgical specialties. Put the specialty label above the title.
 
-## What did Hematology do in this case?
-After a Hematology consult, the Coumadin the patient had been taking for her history of DVT and PE was discontinued. After her first hospital stay she was also followed in the Hematology clinic. At a follow-up visit in the Hematology Clinic one month after her second discharge, her hemoglobin level was 8.0. At that time she was off Lupron and continuing her oral iron supplements.
+## How do I introduce the patient in a case study?
+Open with one sentence that gives the patient's age and sex and the background that matters to the case. The sample describes a 45-year-old female Jehovah's Witness patient with a history of uterine fibroids and severe menorrhagia. Then list the symptoms the patient came in with, such as shortness of breath, fatigue and weakness, and any other relevant history, such as deep venous thrombosis (DVT) and pulmonary emboli (PE). Do not use real names or other identifying details.
 
-## How were the uterine fibroids diagnosed, and why wasn't a hysterectomy done right away?
-Gynecology was consulted and the patient was diagnosed with multiple large fibroids after a transvaginal ultrasound examination. It was determined that a hysterectomy may be needed. However, her hemoglobin level of 3.8 g/dL on admission was too low for surgery. She was then started on Lupron, along with intravenous iron sucrose and darbepoetin alpha.
+## How do I describe the hospital admission and workup?
+State why the patient was admitted. In the sample, she was admitted with iron-deficient anemia for workup and treatment. Then describe each specialist consult and what came from it. After a Hematology consult, the Coumadin she had been taking for her DVT and PE history was discontinued. Gynecology diagnosed multiple large fibroids by transvaginal ultrasound examination. Name the test used to reach the diagnosis, and say whether a bigger treatment, such as a hysterectomy, might be needed.
 
-## What is Lupron and how was it used in this case?
-Lupron (leuprolide acetate) is a long-acting (depot) injection medication that suppresses secretion of the gonadotropins luteinizing hormone (LH) and follicle-stimulating hormone (FSH). It is helpful in cessation of hemorrhage from uterine fibroids. The patient was started on Lupron during her first admission and sent home on monthly Lupron injections. When she later missed one treatment in her Lupron regimen, she started to bleed again. By the final follow-up she was off Lupron.
+## How do I report lab values in a case study?
+Give each lab value with its unit and, when useful, the normal range. The sample reports hemoglobin in g/dL and ferritin in ng/mL, and notes that the normal ferritin level for women is 18-160 compared with the patient's 9. Report hemoglobin at each key point in the timeline: 3.8 g/dL on admission, 5.5 g/dL after 3 weeks, 3.8 g/dL on readmission, 4.9 at discharge, and 8.0 at follow-up. State when a value is too low for surgery.
 
-## How was the patient's anemia treated during her first hospital stay?
-Before this treatment, the Coumadin she had been taking was discontinued after a Hematology consult. She then received daily intravenous iron sucrose at 200 mg and weekly intravenous darbepoetin alpha at 25 mcg. She was also started on Lupron. After 3 weeks her hemoglobin level was 5.5 g/dL. She was sent home on monthly Lupron injections and oral iron supplements, and was followed in the Hematology clinic.
+## How do I describe treatments and doses?
+For each treatment, give the drug name, what it does, the route, the dose and how often it was given. The sample explains that Lupron (leuprolide acetate) is a long-acting depot injection that suppresses LH and FSH and helps stop hemorrhage from uterine fibroids. It gives iron sucrose as 200 mg intravenously daily, darbepoetin alpha as 25 mcg intravenously weekly, and oral iron sulfate as 325 mg twice a day. Also say what the patient took after going home.
 
-## What happened when the patient was readmitted four months later?
-Four months later she was admitted again with shortness of breath, fatigue and weakness. Her hemoglobin level was 3.8 g/dL. She had missed one treatment in her Lupron regimen and had started to bleed again. Her ferritin level was 9 ng/mL, while the normal level for women is 18-160. On her third hospital day she was taken to interventional radiology for a uterine artery fibroid embolization.
+## How do I show a setback or a readmission?
+Use a time marker such as "four months later" and state why the patient came back. In the sample, she missed one treatment in her Lupron regimen and started to bleed again. She returned with the same symptoms (shortness of breath, fatigue and weakness) and the same hemoglobin level of 3.8 g/dL. Give the new lab values, such as a ferritin level of 9 ng/mL, and then say what the care team did next.
 
-## How did the patient's hemoglobin level change over time?
-On her first admission, her hemoglobin level was 3.8 g/dL, which was too low for surgery. After 3 weeks of treatment it was 5.5 g/dL. At readmission four months later it was 3.8 g/dL again. She was discharged two days after the embolization with a hemoglobin level of 4.9. One month later, at a follow-up visit in the Hematology Clinic, it was 8.0.
+## How do I describe the procedure and the discharge?
+Say on which hospital day the procedure happened, which department did it, and what it was. In the sample, on her third hospital day the patient was taken to interventional radiology for a uterine artery fibroid embolization. Then give the discharge: two days later she went home with a hemoglobin level of 4.9 on oral iron sulfate, 325 mg twice a day. The Hopkins page also includes an illustration showing uterine artery embolization.
 
-## When was the uterine artery fibroid embolization done and what happened afterward?
-On her third hospital day of the second admission, the patient was taken to interventional radiology for a uterine artery fibroid embolization. Two days later she was discharged with a hemoglobin level of 4.9 on oral iron sulfate, 325 mg twice a day. The case study page includes an illustration showing uterine artery embolization.
+## How should a case study end? (follow-up and outcome)
+End with the follow-up visit and its result. In the sample, one month later at a follow-up visit in the Hematology Clinic, the hemoglobin level was 8.0, the patient was off Lupron, and she was continuing her oral iron supplements. A good ending states where the follow-up happened, how the key lab value changed, which treatments stopped, and which continue.
 
-## What was the outcome for the patient?
-One month after discharge, at a follow-up visit in the Hematology Clinic, the patient's hemoglobin level was 8.0. She was off Lupron and continuing her oral iron supplements. She had been discharged from her second hospital stay two days after the embolization, with a hemoglobin level of 4.9, on oral iron sulfate 325 mg twice a day.
+## What tone and length should a case study have?
+Write in short, factual paragraphs in the order the events happened. The sample has three paragraphs after the title: the first covers the presentation and history, the second covers the workup and first treatment, and the third covers the readmission, the procedure and the follow-up. Use plain statements of what was done and what happened, with numbers and units. Stick to the facts of the case.
 
-## What medications and doses were used in this case?
-Coumadin, taken for her DVT and PE history, was discontinued. Lupron (leuprolide acetate) was given as a long-acting depot injection, monthly after discharge. Intravenous iron sucrose was given daily at 200 mg, and darbepoetin alpha was given intravenously weekly at 25 mcg. She went home on oral iron supplements, and after the embolization she was discharged on oral iron sulfate, 325 mg twice a day.
+## What disclaimer or purpose statement goes with case studies?
+The Hopkins Case Studies page says the purpose is to share the center's experience for its educational value and to describe clinical care methods that worked for its patients. It warns that these methods may not be appropriate for all patients, because each patient and each condition may have unique issues. It also says some treatments may not suit smaller medical centers that lack special equipment or experience. Add that any case you write is fictional and educational, and encourage readers to consult a health professional.
+
+## What kinds of cases can be written?
+Cases can range from commonly seen, routine medical conditions to rare or uniquely challenging ones. The Hopkins cases are organized by a wide variety of medical and surgical specialties, for example Obstetrics and Gynecology. The related clinician resources cover Medicine and Surgery, Pediatrics, Diseases and Conditions, and Bioethics and Law, so these are also useful category labels for new cases.
+
+## Can the chatbot invent patient details for a case study?
+Only as a clearly labeled fictional, educational case. Never use a real patient's name or identifying details, and never present an invented case as a real Hopkins case. For doses and lab values, use only the facts found in the notes. If a number is not in the notes, leave it out or say it is not available. Remind the reader to check with a health professional before acting on anything in a case study.
