@@ -80,3 +80,75 @@ Cases can range from commonly seen, routine medical conditions to rare or unique
 
 ## Can the chatbot invent patient details for a case study?
 Only as a clearly labeled fictional, educational case. Never use a real patient's name or identifying details, and never present an invented case as a real Hopkins case. For doses and lab values, use only the facts found in the notes. If a number is not in the notes, leave it out or say it is not available. Remind the reader to check with a health professional before acting on anything in a case study.
+## How should the bot use the practice cases?
+When a student asks for a practice case, quiz, or case study, the bot picks one practice case, presents the case, and asks the question. It then waits for the student's answer. After the student answers, the bot compares the answer with the key points, says what the student got right, and adds anything missing in a friendly, brief way. The bot can pick a case by topic if the student asks for one, such as stress, nutrition, or alcohol. Every case is fictional and educational. For real health concerns, the bot encourages the student to talk to a health professional or campus health services.
+
+## Practice case: college student with stress and poor sleep before exams
+Case (fictional, educational): A 20-year-old student sleeps about 4 to 5 hours a night during exam week. They drink coffee in the evening, scroll their phone in bed, and feel anxious and tired during the day.
+Question for the student: Which habits could this student change to manage stress and sleep better?
+Key points: keep a regular sleep schedule; avoid caffeine late in the day; keep screens out of bed; fit in exercise and short study breaks; try relaxation such as deep breathing; talk to a friend or advisor. If the problems continue, contact campus counseling or the health center.
+
+## Practice case: student skipping breakfast and eating from the vending machine (nutrition)
+Case (fictional, educational): A 19-year-old student skips breakfast, eats chips and soda from a vending machine for lunch, and has a large dinner late at night. By mid-afternoon they feel low on energy.
+Question for the student: What changes would you suggest?
+Key points: eat regular, balanced meals; include fruits, vegetables, whole grains, and protein; plan healthy snacks ahead of time; drink water instead of soda; read nutrition labels; avoid very large meals late at night.
+
+## Practice case: inactive student who wants to start exercising (fitness)
+Case (fictional, educational): A 21-year-old student sits most of the day, has not exercised in a year, and wants to get fit but does not know where to start.
+Question for the student: How should this student begin?
+Key points: start small and build up gradually; choose activities they enjoy; set realistic goals; general guidance for adults is about 150 minutes of moderate aerobic activity per week plus muscle-strengthening activities on 2 days; a student with health concerns should check with a health provider first.
+
+## Practice case: weekend binge drinking and alcohol risks
+Case (fictional, educational): A 20-year-old goes out every weekend and often has many drinks in a short time.
+Question for the student: What are the risks, and what safer choices could this student make?
+Key points: risks include impaired judgment, injuries, accidents, blackouts, and alcohol poisoning. Safer choices: set a limit, eat first, alternate drinks with water, never drive after drinking, and stay with trusted friends. Warning signs of alcohol poisoning are confusion, repeated vomiting, slow or irregular breathing, and passing out. In these cases, call emergency services (911 in the US) right away.
+
+## Practice case: student who vapes and wants to quit tobacco or nicotine
+Case (fictional, educational): A 22-year-old vapes every day and wants to quit, but gets irritable and has strong cravings for nicotine.
+Question for the student: What could help this student quit?
+Key points: nicotine is addictive, and cravings and irritability are common when quitting; set a quit date; identify and avoid triggers; ask friends and family for support; talk to a health provider or the campus health center about quit programs and medication options. In the US, the free quitline 1-800-QUIT-NOW offers support.
+
+## Practice case: preventing the flu and other infectious diseases
+Case (fictional, educational): During flu season, a student shares drinks with friends, rarely washes their hands, and goes to class while sick with a fever and a cough.
+Question for the student: What could this student do to protect themselves and others?
+Key points: wash hands often with soap and water; get a yearly flu vaccine; cover coughs and sneezes; do not share drinks or utensils; stay home when sick with a fever; see a health provider if symptoms are severe.
+
+## Practice case: keeping your heart healthy with a family history of high blood pressure
+Case (fictional, educational): A 19-year-old's parent was recently diagnosed with high blood pressure. The student often eats fast food and smokes occasionally.
+Question for the student: What can this student do now to keep their heart healthy?
+Key points: eat more fruits, vegetables, and whole grains, and cut back on salty foods; be physically active; avoid tobacco; limit alcohol; get regular checkups that include blood pressure; share the family history with a health provider.
+
+## Practice case: how to tell if health information online is reliable
+Case (fictional, educational): A student sees a social media post saying a supplement cures anxiety in one week. The post links to a store that sells it.
+Question for the student: How can the student decide whether this information is reliable?
+Key points: check who wrote it and their credentials; look for evidence from research; prefer government, university, and professional organization websites; watch for sales pitches and bold promises; compare several sources; check the date; ask a health professional before taking a supplement.
+
+## Practice case: lowering the risk of sexually transmitted infections (STIs)
+Case (fictional, educational): A student who is starting a new relationship wants to know how to lower the risk of sexually transmitted infections.
+Question for the student: What steps can reduce the risk?
+Key points: talk openly with a partner; use condoms correctly every time; get tested regularly; get vaccines such as HPV and hepatitis B; abstinence is the only sure way to avoid STIs; the campus health center can provide testing and advice.
+
+## Practice case: student feeling sad and withdrawn for weeks (mental health)
+Case (fictional, educational): A 21-year-old student has felt sad and unmotivated for several weeks, has pulled away from friends, and sleeps much more than usual.
+Question for the student: What should this student do, and what would you say to a friend in this situation?
+Key points: these feelings are common and treatable, and asking for help is a strength; talk to a trusted person; contact campus counseling or a health provider; keep routines for sleep, meals, and activity. If someone has thoughts of harming themselves, call or text 988 (the US Suicide & Crisis Lifeline) or emergency services right away.
+
+## Practice case: running outside in the heat (heat-related illness)
+Case (fictional, educational): A student goes for a run at noon on a hot, humid day without water. They start to feel dizzy, nauseated, and very sweaty.
+Question for the student: What might be happening, and what should the student do?
+Key points: these can be signs of heat-related illness such as heat exhaustion; stop the activity, move to a cool shaded place, drink water, and loosen clothing; get medical help if symptoms get worse, and call emergency services if there is confusion or fainting. Prevent it by exercising in cooler hours, staying hydrated, and wearing light clothing.
+
+## Practice case: biking at night without a helmet (injury prevention)
+Case (fictional, educational): A student bikes to class at night without a helmet or lights and listens to music through headphones.
+Question for the student: How can this student reduce the risk of injury?
+Key points: wear a helmet; use front and rear lights and reflective gear; follow traffic rules; keep headphones low or off so traffic can be heard; stay visible and alert.
+
+## Practice case: understanding premium, deductible, and copay (health insurance)
+Case (fictional, educational): A student just got a health insurance plan and does not understand the terms premium, deductible, and copay.
+Question for the student: How would you explain each term?
+Key points: a premium is the regular payment, usually monthly, to keep coverage; a deductible is the amount you pay out of pocket before insurance starts paying for many services; a copay is a fixed amount you pay for a visit or prescription; in-network providers usually cost less.
+
+## Practice case: how where you live affects your health (social determinants of health)
+Case (fictional, educational): In one neighborhood there are grocery stores with fresh food, parks, and nearby clinics. In another there are few grocery stores, no safe place to exercise, and the nearest clinic is far away.
+Question for the student: How could where people live affect their health?
+Key points: social determinants of health are the conditions in which people are born, live, learn, and work. Access to healthy food, safe places to be active, health care, income, education, and housing all shape health and can lead to health disparities between communities.
