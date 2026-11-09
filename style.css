@@ -158,7 +158,8 @@ input:focus-visible {
   color: var(--text);
 }
 .composer button,
-dialog button#closeInfo {
+dialog button#closeInfo,
+dialog button#saveKey {
   background: var(--accent);
   color: var(--accent-text);
   border: none;
@@ -183,6 +184,17 @@ dialog h3 { margin: 0 0 6px; }
 dialog ul { margin: 0; padding-left: 18px; line-height: 1.6; }
 .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .note { color: var(--muted); font-size: 0.9rem; }
+
+#keyInput {
+  width: 100%;
+  font: inherit;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+}
+.key-actions { display: flex; gap: 8px; margin-top: 14px; }
 
 
 #confetti {
