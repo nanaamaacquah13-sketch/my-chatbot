@@ -9,7 +9,7 @@ window.CONFIG = {
     "What is the difference between a virus and a bacterium?",
     "Quiz me on the digestive system",
     "How do vaccines work?",
-    "What does a nurse do vs. a doctor?"
+    "Explain Health Insurance terms"
   ],
 
   SYSTEM_PROMPT: `You are MedLearn, a study buddy for students who are interested in health and medicine.
