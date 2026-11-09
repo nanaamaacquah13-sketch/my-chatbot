@@ -38,6 +38,42 @@ infoDialog.addEventListener("click", (e) => {
   if (e.target === infoDialog) infoDialog.close();
 });
 
+/* ---------- API key (kept in this browser only, never in the code) ---------- */
+const keyBtn = document.getElementById("keyBtn");
+const keyDialog = document.getElementById("keyDialog");
+const keyInput = document.getElementById("keyInput");
+const saveKey = document.getElementById("saveKey");
+const removeKey = document.getElementById("removeKey");
+
+function getKey() {
+  try { return localStorage.getItem("medlearn-key") || ""; } catch (e) { return ""; }
+}
+
+keyBtn.addEventListener("click", () => {
+  keyInput.value = "";
+  keyDialog.showModal();
+});
+
+saveKey.addEventListener("click", () => {
+  // remove any spaces or line breaks that came along when pasting
+  const value = keyInput.value.replace(/\s+/g, "");
+  if (!value) return;
+  try { localStorage.setItem("medlearn-key", value); } catch (e) {}
+  keyInput.value = "";
+  keyDialog.close();
+  input.focus();
+});
+
+removeKey.addEventListener("click", () => {
+  try { localStorage.removeItem("medlearn-key"); } catch (e) {}
+  keyInput.value = "";
+  keyDialog.close();
+});
+
+keyDialog.addEventListener("click", (e) => {
+  if (e.target === keyDialog) keyDialog.close();
+});
+
 /* ---------- Messages ---------- */
 function formatText(text) {
   const safe = text
@@ -104,15 +140,20 @@ function showTyping() {
 
 /* ---------- Gemini call ---------- */
 async function askGemini() {
-  const res = await fetch("/.netlify/functions/chat", {
+  const url = "https://generativelanguage.googleapis.com/v1beta/models/" + CONFIG.MODEL + ":generateContent";
+  const res = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "x-goog-api-key": getKey()
+    },
     body: JSON.stringify({
       systemInstruction: { parts: [{ text: CONFIG.SYSTEM_PROMPT }] },
       contents: history
     })
   });
-  const data = await res.json();
+  let data = {};
+  try { data = await res.json(); } catch (e) {}
   if (!res.ok) {
     throw new Error((data.error && data.error.message) || "Something went wrong.");
   }
@@ -123,6 +164,12 @@ async function askGemini() {
 async function sendMessage(text) {
   text = text.trim();
   if (!text || busy) return;
+
+  if (!getKey()) {
+    keyInput.value = "";
+    keyDialog.showModal();
+    return;
+  }
 
   startersEl.innerHTML = "";
   addMessage("user", text);
