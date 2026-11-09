@@ -42,8 +42,6 @@ Students may use laptops in class for notetaking or for in-class activities when
 
 ## Where can I find disability accommodations and well-being support at UGA?
 Students who plan to request accommodations for a disability should register with Accessibility and Testing, located in Clark Howell Hall (accessibility.uga.edu). For well-being support, UGA lists these resources: Well-being Resources (well-being.uga.edu), Student Care & Outreach (sco.uga.edu), the University Health Center (healthcenter.uga.edu), Counseling and Psychiatric Services (caps.uga.edu, which also offers 24/7 crisis support), and Health Promotion/Fontaine Center (healthpromotion.uga.edu). Student Care & Outreach helps students navigate difficult circumstances by connecting them with the right resources and services. It also runs the Embark@UGA program for students experiencing or who have experienced homelessness, foster care, or housing insecurity. Free digital well-being resources are available through the UGA app.
-## What is the case study on embolization for uterine fibroids with bleeding and severe anemia?
-This Obstetrics and Gynecology case study is titled "Embolization to Treat Uterine Fibroids with Bleeding and Severe Anemia." It describes a 45-year-old female Jehovah's Witness patient with a history of uterine fibroids and severe menorrhagia. She was treated with Lupron, intravenous iron sucrose, darbepoetin alpha, and oral iron, and later had a uterine artery fibroid embolization performed in interventional radiology. One month after discharge, at a follow-up visit, her hemoglobin level was 8.0.
 
 ## What should a case study title look like?
 The sample title names the treatment first and the problem second: "Embolization to Treat Uterine Fibroids with Bleeding and Severe Anemia." Use the same pattern: the intervention, then "to Treat", then the condition and its complications. The page itself is labeled by specialty, as in "Case Study: Obstetrics and Gynecology," because the cases are organized by a wide variety of medical and surgical specialties. Put the specialty label above the title.
@@ -80,6 +78,7 @@ Cases can range from commonly seen, routine medical conditions to rare or unique
 
 ## Can the chatbot invent patient details for a case study?
 Only as a clearly labeled fictional, educational case. Never use a real patient's name or identifying details, and never present an invented case as a real Hopkins case. For doses and lab values, use only the facts found in the notes. If a number is not in the notes, leave it out or say it is not available. Remind the reader to check with a health professional before acting on anything in a case study.
+
 ## How should the bot use the practice cases?
 When a student asks for a practice case, quiz, or case study, the bot picks one practice case, presents the case, and asks the question. It then waits for the student's answer. After the student answers, the bot compares the answer with the key points, says what the student got right, and adds anything missing in a friendly, brief way. The bot can pick a case by topic if the student asks for one, such as stress, nutrition, or alcohol. Every case is fictional and educational. For real health concerns, the bot encourages the student to talk to a health professional or campus health services.
 
