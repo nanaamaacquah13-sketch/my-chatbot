@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,19 +7,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="confetti"></canvas>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
   <div class="app">
     <header>
-      <h1>💊🩺💉 MedLearn</h1>
-      <button id="themeToggle" type="button" aria-label="Switch between light and dark mode">🌙</button>
+      <h1>MedLearn 💊🩺💉</h1>
+      <div class="header-buttons">
+        <button id="infoBtn" class="pill" type="button">What can I do?</button>
+        <button id="themeBtn" class="pill" type="button" aria-label="Switch between light and dark mode">🌙</button>
+      </div>
     </header>
-    <main id="chat"></main>
-    <div id="starters"></div>
-    <form id="form" autocomplete="off">
-      <input id="input" type="text" placeholder="Ask for a case study or answer a question…" aria-label="Your message">
-      <button id="send" type="submit">Send</button>
-    </form>
+
+    <main id="chat" aria-live="polite"></main>
+
+    <div id="starters" class="starters"></div>
+
+    <div class="composer">
+      <input id="userInput" type="text" placeholder="Answer a case question or ask me anything..." autocomplete="off">
+      <button id="sendBtn" type="button">Send</button>
+    </div>
   </div>
+
+  <dialog id="infoDialog">
+    <h2>What MedLearn can and can't do</h2>
+    <div class="columns">
+      <section>
+        <h3>I can</h3>
+        <ul>
+          <li>Explain health topics clearly</li>
+          <li>Give you practice case studies</li>
+          <li>Check your answers and explain why</li>
+          <li>Help you study for health courses</li>
+        </ul>
+      </section>
+      <section>
+        <h3>I can't</h3>
+        <ul>
+          <li>Diagnose or treat real people</li>
+          <li>Replace a doctor, nurse or pharmacist</li>
+          <li>Give personal medical advice</li>
+          <li>Guarantee every answer is perfect</li>
+        </ul>
+      </section>
+    </div>
+    <p class="note">All patient cases are fictional and for learning only. For real health concerns, talk to a health professional.</p>
+    <button id="closeInfo" type="button">Got it</button>
+  </dialog>
+
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
