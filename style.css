@@ -1,89 +1,58 @@
 :root {
   --brand: #BA0C2F;
-  --bg: #fdeef1;
+  --bg: #f6f6f8;
   --card: #ffffff;
-  --text: #1d1d22;
+  --text: #1c1c1e;
   --muted: #6b6b76;
-  --border: #e2e2e8;
-  --user-text: #ffffff;
-  --error-bg: #fff0f0;
-  --error-text: #8a1020;
-  --error-border: #f3b5bd;
+  --bot: #eeeef2;
+  --border: #dcdce2;
 }
-
-[data-theme="dark"] {
-  --bg: #15151a;
-  --card: #1f1f26;
-  --text: #ececf1;
-  --muted: #a0a0ab;
-  --border: #33333d;
-  --error-bg: #3a1a20;
-  --error-text: #ffb3be;
-  --error-border: #6b2a35;
+:root[data-theme="dark"] {
+  --bg: #121214;
+  --card: #1c1c20;
+  --text: #ececf0;
+  --muted: #9a9aa6;
+  --bot: #2a2a30;
+  --border: #35353d;
 }
-
 * { box-sizing: border-box; }
-
-[hidden] { display: none !important; }
-
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+html, body { height: 100%; margin: 0; }
+body {
   background: var(--bg);
   color: var(--text);
-  transition: background 0.3s, color 0.3s;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  transition: background 0.25s, color 0.25s;
 }
-
 .app {
+  max-width: 720px;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-width: 760px;
-  margin: 0 auto;
   background: var(--card);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
 }
-
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
   padding: 12px 16px;
   background: var(--brand);
   color: #fff;
 }
-
-.brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
-.emoji { font-size: 1.6rem; }
-h1 { margin: 0; font-size: 1.15rem; }
-header p { margin: 0; font-size: 0.8rem; opacity: 0.9; }
-
-.actions { display: flex; gap: 6px; }
-.actions button {
+header h1 { margin: 0; font-size: 1.25rem; }
+#themeToggle {
+  border: 0;
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  padding: 6px 10px;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   cursor: pointer;
 }
-
-/* ---------- NEW: notes status line ---------- */
-.kb-status {
-  padding: 6px 16px;
-  font-size: 0.8rem;
-  color: var(--muted);
-  background: var(--card);
-  border-bottom: 1px solid var(--border);
-}
-.kb-status.warn {
-  color: var(--error-text);
-  background: var(--error-bg);
-  border-bottom-color: var(--error-border);
-}
-
+#themeToggle:hover { background: rgba(255, 255, 255, 0.35); }
 #chat {
   flex: 1;
   overflow-y: auto;
@@ -92,115 +61,46 @@ header p { margin: 0; font-size: 0.8rem; opacity: 0.9; }
   flex-direction: column;
   gap: 10px;
 }
-
-.bubble {
+.msg {
   max-width: 85%;
   padding: 10px 14px;
   border-radius: 16px;
   line-height: 1.45;
   overflow-wrap: anywhere;
 }
-.bubble.bot { align-self: flex-start; background: var(--bg); border: 1px solid var(--border); }
-.bubble.user { align-self: flex-end; background: var(--brand); color: var(--user-text); }
-.bubble.error { align-self: flex-start; background: var(--error-bg); color: var(--error-text); border: 1px solid var(--error-border); }
-.bubble ul { margin: 6px 0; padding-left: 20px; }
-
-/* ---------- NEW: "Sources" section under replies ---------- */
-.sources {
-  margin-top: 10px;
-  padding-top: 8px;
-  border-top: 1px solid var(--border);
-  font-size: 0.85rem;
-}
-.sources summary { cursor: pointer; color: var(--muted); font-weight: 600; }
-.source-item { margin-top: 8px; }
-.source-title { font-weight: 600; }
-.source-preview { margin-top: 2px; color: var(--muted); }
-
-.dots span {
-  display: inline-block;
-  width: 8px; height: 8px;
-  margin: 0 2px;
-  border-radius: 50%;
-  background: var(--muted);
-  animation: bounce 1.2s infinite ease-in-out;
-}
-.dots span:nth-child(2) { animation-delay: 0.2s; }
-.dots span:nth-child(3) { animation-delay: 0.4s; }
-@keyframes bounce {
-  0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
-  40% { transform: translateY(-6px); opacity: 1; }
-}
-
-#starters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 0 16px 8px;
-}
+.msg.bot { background: var(--bot); align-self: flex-start; border-bottom-left-radius: 4px; }
+.msg.user { background: var(--brand); color: #fff; align-self: flex-end; border-bottom-right-radius: 4px; }
+.sources { margin-top: 8px; font-size: 0.8rem; color: var(--muted); }
+#starters { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 16px 12px; }
 #starters button {
   background: var(--card);
-  color: var(--brand);
+  color: var(--text);
   border: 1px solid var(--brand);
   border-radius: 999px;
-  padding: 8px 12px;
+  padding: 8px 14px;
   font-size: 0.9rem;
   cursor: pointer;
 }
-
-.composer {
-  display: flex;
-  gap: 8px;
-  padding: 12px 16px;
-  border-top: 1px solid var(--border);
-}
-textarea {
+#starters button:hover { background: var(--brand); color: #fff; }
+#form { display: flex; gap: 8px; padding: 12px 16px; border-top: 1px solid var(--border); }
+#input {
   flex: 1;
-  resize: none;
-  max-height: 120px;
-  padding: 10px;
-  border-radius: 12px;
+  padding: 12px 14px;
   border: 1px solid var(--border);
+  border-radius: 999px;
   background: var(--bg);
   color: var(--text);
-  font: inherit;
+  font-size: 1rem;
 }
-#sendBtn {
+#input:focus { outline: 2px solid var(--brand); }
+#send {
+  border: 0;
   background: var(--brand);
   color: #fff;
-  border: none;
-  border-radius: 12px;
-  padding: 0 18px;
+  padding: 0 20px;
+  border-radius: 999px;
   font-size: 1rem;
   cursor: pointer;
 }
-#sendBtn:disabled { opacity: 0.5; cursor: not-allowed; }
-
-dialog {
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--card);
-  color: var(--text);
-  width: min(92vw, 380px);
-}
-dialog::backdrop { background: rgba(0, 0, 0, 0.5); }
-dialog h2 { margin-top: 0; }
-dialog input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--bg);
-  color: var(--text);
-}
-.remember { display: block; margin: 12px 0; font-size: 0.9rem; }
-.dialog-buttons { display: flex; justify-content: flex-end; gap: 8px; }
-.dialog-buttons button {
-  padding: 8px 14px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--bg);
-  color: var(--text);
-  cursor: pointer;
-}
-#keySave { background: var(--brand); color: #fff; border-color: var(--brand); }
+#send:disabled { opacity: 0.5; cursor: not-allowed; }
+#confetti { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 10; }
