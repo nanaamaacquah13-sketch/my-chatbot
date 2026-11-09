@@ -13,6 +13,7 @@
     <header>
       <h1>MedLearn 💊🩺💉</h1>
       <div class="header-buttons">
+        <button id="keyBtn" class="pill" type="button">🔑 Key</button>
         <button id="infoBtn" class="pill" type="button">What can I do?</button>
         <button id="themeBtn" class="pill" type="button" aria-label="Switch between light and dark mode">🌙</button>
       </div>
@@ -27,6 +28,16 @@
       <button id="sendBtn" type="button">Send</button>
     </div>
   </div>
+
+  <dialog id="keyDialog">
+    <h2>Your Gemini key</h2>
+    <p class="note">Paste your own key from Google AI Studio. It is saved only in this browser and is never part of the website files.</p>
+    <input id="keyInput" type="password" placeholder="Paste key here" autocomplete="off">
+    <div class="key-actions">
+      <button id="saveKey" type="button">Save</button>
+      <button id="removeKey" class="pill" type="button">Remove key</button>
+    </div>
+  </dialog>
 
   <dialog id="infoDialog">
     <h2>What MedLearn can and can't do</h2>
