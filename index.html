@@ -1,53 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MedLearn</title>
+  <title>MedLearn 💊🩺💉</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <canvas id="confetti"></canvas>
   <div class="app">
     <header>
-      <div class="brand">
-        <span class="emoji">💊🩺💉</span>
-        <div>
-          <h1>MedLearn</h1>
-          <p>Your friendly health study buddy</p>
-        </div>
-      </div>
-      <div class="actions">
-        <button id="keyBtn" type="button">🔑 API key</button>
-        <button id="clearBtn" type="button">New chat</button>
-        <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode">🌙</button>
-      </div>
+      <h1>💊🩺💉 MedLearn</h1>
+      <button id="themeToggle" type="button" aria-label="Switch between light and dark mode">🌙</button>
     </header>
-
-    <div id="kbStatus" class="kb-status" hidden></div>
-
-    <main id="chat" aria-live="polite"></main>
-
+    <main id="chat"></main>
     <div id="starters"></div>
-
-    <form class="composer" id="composer">
-      <textarea id="input" rows="1" placeholder="Ask a health or medicine question..."></textarea>
-      <button id="sendBtn" type="submit">Send</button>
+    <form id="form" autocomplete="off">
+      <input id="input" type="text" placeholder="Ask for a case study or answer a question…" aria-label="Your message">
+      <button id="send" type="submit">Send</button>
     </form>
   </div>
-
-  <dialog id="keyDialog">
-    <h2>Gemini API key</h2>
-    <p>Paste your key to start chatting. It is only sent to Google's Gemini API.</p>
-    <input type="password" id="keyInput" placeholder="Paste your API key" autocomplete="off">
-    <label class="remember">
-      <input type="checkbox" id="rememberKey"> Remember on this device
-    </label>
-    <div class="dialog-buttons">
-      <button type="button" id="keyCancel">Cancel</button>
-      <button type="button" id="keySave">Save</button>
-    </div>
-  </dialog>
-
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
