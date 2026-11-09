@@ -1,153 +1,499 @@
-## What is HPRB 1710 Health and Wellness and when does it meet?
-HPRB 1710 Health and Wellness is a 3-credit course offered in Fall 2026 by the Department of Health Promotion and Behavior, College of Public Health, at the University of Georgia. The class meets Monday, Wednesday and Friday from 2:55 to 3:50 PM in Ramsey, room 203. The course looks at the factors that affect an individual's level of wellness. Office hours are by appointment only, and students are encouraged to email the instructor to set up a time to meet. All required course materials are provided free of charge through eLC. Important information and course updates are posted in the eLC course announcements. The instructor typically replies to emails within one to two business days, during normal business hours, and expects professional email etiquette.
+### Case 1 — Cardiology: Chest pressure on stairs
+Patient: Mr. Lee, 58, feels chest pressure when climbing stairs. It goes away after about 5 minutes of rest.
+Question: What is the most likely cause, and what is a good first test?
+Answer: Stable angina, meaning the heart muscle is not getting enough blood during effort because the coronary arteries are narrowed. First steps are an ECG (heart tracing) and a stress test. Key idea: pain with effort that eases with rest points to angina.
 
-## What topics are covered in HPRB 1710?
-The course description says factors affecting individual wellness are considered, including mental health, nutrition, diet and weight control, physical fitness, smoking, human sexuality, consumer health, alcohol and other drugs, disease, environmental health, and injury prevention. The listed course topics are: Introduction to Health, Introduction to Public Health, Personal Stress Management, Caring for the Mind, The Joy of Fitness, Nutrition for Life, Eating Patterns and Problems, Communication and Relationships, Personal Sexuality, Reproductive Choices, Defending Yourself from Infectious Diseases, Keeping Your Heart Healthy, Working Toward a Healthy Environment, Maternal Health, Drug Use, Misuse, and Abuse, Tobacco Use, Misuse, and Abuse, and When Life Ends.
+### Case 2 — Cardiology: Crushing chest pain
+Patient: Mr. Brown, 62, has crushing chest pain for 30 minutes with sweating and pain down the left arm. Rest does not help.
+Question: What is likely happening, and what should be done first?
+Answer: A heart attack (myocardial infarction). Call emergency services right away. An ECG and blood tests for troponin follow. Chewing aspirin is often advised unless the person is allergic. Key idea: pain that does not go away with rest is an emergency.
 
-## What will I learn in this course? (student learning outcomes)
-By the end of the course, students will be able to: define health and wellness, social determinants of health, sustainability, and public health; identify aspects of the environment that affect health; discuss basic information on current health issues; identify behaviors that are detrimental to health and discuss their short-term and long-term effects; explore attitudes, values, and beliefs about health and lifestyle; identify and use reliable sources of health information; identify local, state, national, and global health promotion organizations; and present current and accurate information to facilitate health decision-making.
+### Case 3 — Cardiology: Swollen ankles and breathlessness
+Patient: Mrs. Garcia, 70, has swollen ankles, gets short of breath lying flat, and is very tired.
+Question: What condition fits these signs, and what test helps?
+Answer: Heart failure, where the heart does not pump strongly enough so fluid backs up in the legs and lungs. An echocardiogram (heart ultrasound) helps. Treatment often includes diuretics ("water pills") and limiting salt.
 
-## How is my final grade calculated and what is the grading scale?
-The final grade is the sum of all points earned, expressed as a percentage of the total points. No extra points are available. Exams are worth 300 points (100 each), quizzes 120 points (10 each), participation activities 120 points (10 each), and attendance 100 points. The grading scale is: A 93-100%, A- 90-90.99%, B+ 87-89.99%, B 83-86.99%, B- 80-82.99%, C+ 77-79.99%, C 73-76.99%, C- 70-72.99%, D+ 67-69.99%, D 60-66.99%, and F below 60%.
+### Case 4 — Cardiology: Irregular pulse
+Patient: Mr. Novak, 72, feels his heart fluttering. His pulse feels irregular.
+Question: What is the likely rhythm problem, and why does it matter?
+Answer: Atrial fibrillation (AFib), found with an ECG. It matters because blood can pool in the heart and form clots that cause a stroke, so doctors often prescribe blood thinners.
 
-## How do the exams work and when are they?
-The course has three exams and a comprehensive final exam. Exams cover material from both the in-person and online parts of the class. Your lowest test grade is dropped, so the final exam is optional. If you are satisfied with your test grades, you do not need to take the final exam. Each exam is worth 100 points. According to the schedule, Exam 1 is on 09/21, Exam 2 is on 10/23, and Exam 3 is on 12/1. Exam reviews are scheduled before the exams, on 09/18 and 10/21. The syllabus says the instructor may announce deviations from the posted schedule in class and on eLC.
+### Case 5 — Cardiology: High blood pressure
+Patient: Ms. Carter, 45, has readings of 168/102 at three separate visits and no symptoms.
+Question: What is the diagnosis, and what advice comes first?
+Answer: Hypertension (high blood pressure). Lifestyle changes come first: less salt, regular exercise, healthy weight, limiting alcohol. Medicine is often added at readings this high. It is called the silent killer because it often has no symptoms.
 
-## What are the quizzes and participation activities?
-Quizzes assess your general knowledge of course topics. They are based on lecture content, occur each week, and are part of the online modules. Quizzes are multiple choice and/or short answer. Each is worth 10 points. Participation Activities are based on course readings, videos, or podcasts outside of the lecture content. They are also part of the online modules and occur each week. They are completed in Perusall, an online social annotation tool. These activities are opportunities for clarifying information, critical thinking, applying course concepts, and interacting with classmates. Each is worth 10 points.
+### Case 6 — Cardiology: Dizzy when standing
+Patient: Jo, 19, feels dizzy and nearly faints when standing up quickly after lying down.
+Question: What is this called, and what helps?
+Answer: Orthostatic (postural) hypotension, a short drop in blood pressure on standing. Common causes are dehydration and some medicines. Drink fluids, stand up slowly, and see a doctor if it keeps happening.
 
-## What is the attendance policy?
-After Drop/Add, attendance is taken every day unless otherwise noted. Attendance is worth 100 points of the final grade. Students have five free absences. After that, five points are deducted from the attendance grade for each absence. Any cell phone use in class may result in losing points from the attendance grade. A student found recording class without permission may be asked to leave and counted absent. Students are expected to read assigned articles and complete assigned activities before class meetings.
+### Case 7 — Cardiology: Swollen calf after a flight
+Patient: Mr. Adams, 50, has a painful, swollen, warm left calf after a 10-hour flight.
+Question: What should you suspect, and what test confirms it?
+Answer: Deep vein thrombosis (DVT), a blood clot in a leg vein. A leg ultrasound confirms it. Treatment is blood thinners. Risk is higher with long sitting, surgery, and some medicines.
 
-## What is the late assignment policy and what if I have extenuating circumstances?
-For each day an assignment is late, 10% of its points are deducted. After 48 hours, assignments are not accepted. If you experience extenuating circumstances that keep you from attending or keeping up with the content, contact the instructor as soon as possible. The instructor can then see whether an extension is warranted or whether withdrawing would be more appropriate. The later in the semester you wait, the harder it is for the instructor and your other faculty to make adjustments. The syllabus also recommends contacting Student Care & Outreach, which can help you coordinate with faculty and connect you with resources at UGA or in the community.
+### Case 8 — Cardiology: Sudden breathlessness after a clot
+Patient: Mr. Adams (Case 7) suddenly becomes short of breath with sharp chest pain.
+Question: What complication is feared?
+Answer: A pulmonary embolism, where part of the clot travels to the lungs. It is an emergency. Call emergency services.
 
-## Can I use AI tools like ChatGPT in HPRB 1710?
-No. UGA's policy is that AI may not be used for coursework unless the course instructor explicitly authorizes it ahead of time. In this course, Generative AI tools are not permitted, so that students develop and master the foundational knowledge and skills. However, AI writing tools such as Grammarly or Turnitin are acceptable for checking the grammar and spelling of your work. If you are uncertain about using a particular tool, consult the instructor ahead of time. Participation Activities may be submitted to Turnitin for textual similarity review, including detection of AI-generated content.
+### Case 9 — Cardiology: High cholesterol
+Patient: Ana, 35, has an LDL ("bad") cholesterol of 190 mg/dL and her father had a heart attack at 48.
+Question: What does this suggest, and what is the plan?
+Answer: Very high LDL with early heart disease in the family suggests a genetic cause such as familial hypercholesterolemia. The plan is a heart-healthy diet, exercise, and usually a statin medicine after talking with a doctor.
 
-## What is the academic honesty and plagiarism policy?
-Students are held to the UGA Student Honor Code: to be academically honest in all academic work and not tolerate academic dishonesty by others. Plagiarism means using another person's ideas or words as your own without crediting the source. The syllabus says you must do more than cite sources: you must not copy or simply reword others' work. If you are unsure how to paraphrase or summarize, you can meet with the instructor to practice. The Purdue Online Writing Lab and the UGA Writing Center are suggested resources. Participation Activities may be submitted to Turnitin. Discussions and activities conducted online for the class should be kept private and not shared with anyone outside the class.
+### Case 10 — Cardiology: Murmur in a healthy child
+Patient: Leo, 6, has a soft heart murmur found at a checkup. He has no symptoms and grows well.
+Question: Is this always serious?
+Answer: No. Many children have innocent (harmless) murmurs. A doctor listens carefully and may order an echocardiogram if anything seems unusual, such as poor growth or breathlessness.
 
-## What are the classroom rules on laptops, phones, recording and respect?
-Students may use laptops in class for notetaking or for in-class activities when permitted. Cell phones are not permitted in class, and any use may cost points from the attendance grade. Students may not record class without permission from the Disabilities Resource Center. Students may disagree with their peers as long as opinions are honest and supported, and ridiculing or disrespect in any form is not tolerated. Students are expected to accurately portray the current status of research and theory, including its shortcomings, even when it conflicts with their personal values and beliefs. Classes include lectures, guest instructors, and small group discussions and activities.
+### Case 11 — Respiratory: Wheezing child
+Patient: Maya, 8, has a night cough, wheezing with running, and eczema.
+Question: What is the likely diagnosis, and what two kinds of inhalers exist?
+Answer: Asthma, where the airways narrow and swell. A rescue inhaler (like albuterol) relaxes airways quickly. A controller inhaler (inhaled steroid) lowers swelling over time.
 
-## What is the class schedule from August 17 to September 21?
-08/17 Introduction and Syllabus. 08/19 Intro to Health and Wellness. 08/21 Health Information. 08/24 What is Public Health? 08/26 Unnatural Causes. 08/28 Health and Wellness. 08/31 Health Disparities. 09/02 Social Ecological Model of Health. 09/04 Systems Thinking. 09/07 No class (Labor Day). 09/09 Social Determinants of Health. 09/11 Non Communicable Diseases. 09/14 Chronic Disease. 09/16 Heart Disease. 09/18 Exam Review. 09/21 Exam 1.
+### Case 12 — Respiratory: Smoker's cough
+Patient: Mr. Hall, 62, has smoked for 40 years. He has a daily cough and gets breathless on walks.
+Question: What condition fits, and what is the most important step?
+Answer: COPD (chronic obstructive pulmonary disease). A breathing test called spirometry confirms it. Quitting smoking is the most important step because it slows lung damage.
 
-## What is the class schedule from September 23 to October 23?
-09/23 Nutrition. 09/25 Nutrition, Fitness, and Weight Management. 09/28 Guest Speaker: Nutrition. 09/30 Stress. 10/2 Stress and Sleep. 10/5 Guest Speaker: Stress Management. 10/7 Mental Health. 10/9 Mental and Emotional Health. 10/12 Guest Speaker: Mental Health. 10/14 Guest Speaker: Substance Use. 10/16 Alcohol and Tobacco Use. 10/19 Tobacco Use. 10/21 Exam Review. 10/23 Exam 2.
+### Case 13 — Respiratory: Fever and cough
+Patient: Mrs. Ito, 68, has fever, a cough with green sputum, and crackling sounds in the lower right lung.
+Question: What is likely, and how is it confirmed?
+Answer: Pneumonia, an infection of the lung air sacs. A chest X-ray confirms it. Bacterial pneumonia is treated with antibiotics, and rest and fluids help.
 
-## What is the class schedule from October 26 to December 1?
-10/26 Guest Speaker: Healthy Relationships. 10/28 Guest Speaker: Sexual Health. 10/30 Sexual Health. 11/2 Guest Speaker: Contraception 101. 11/4 Guest Speaker: STI Management. 11/6 Infectious Diseases. 11/9 Maternal Health. 11/11 Guest Speaker: Aging and Health. 11/13 Complementary and Integrative Health. 11/16 and 11/18 are listed as TBD. 11/20 Health Insurance. 11/23 No class (Thanksgiving Break). No topics are listed for 11/25 and 11/27. 12/1 Exam 3.
+### Case 14 — Respiratory: Sore throat
+Patient: Sam, 10, has sudden sore throat, fever, white patches on the tonsils, and no cough.
+Question: What should be tested, and why?
+Answer: A rapid strep test for Group A Strep. If positive, antibiotics (often penicillin) prevent complications such as rheumatic fever.
 
-## Where can I find disability accommodations and well-being support at UGA?
-Students who plan to request accommodations for a disability should register with Accessibility and Testing, located in Clark Howell Hall (accessibility.uga.edu). For well-being support, UGA lists these resources: Well-being Resources (well-being.uga.edu), Student Care & Outreach (sco.uga.edu), the University Health Center (healthcenter.uga.edu), Counseling and Psychiatric Services (caps.uga.edu, which also offers 24/7 crisis support), and Health Promotion/Fontaine Center (healthpromotion.uga.edu). Student Care & Outreach helps students navigate difficult circumstances by connecting them with the right resources and services. It also runs the Embark@UGA program for students experiencing or who have experienced homelessness, foster care, or housing insecurity. Free digital well-being resources are available through the UGA app.
+### Case 15 — Respiratory: A cold
+Patient: Priya, 22, has a runny nose, mild cough, and low fever for 3 days.
+Question: Does she need antibiotics?
+Answer: No. This is most likely a common cold, caused by a virus. Antibiotics only work on bacteria. Rest, fluids, and over-the-counter symptom relief help.
 
-## What should a case study title look like?
-The sample title names the treatment first and the problem second: "Embolization to Treat Uterine Fibroids with Bleeding and Severe Anemia." Use the same pattern: the intervention, then "to Treat", then the condition and its complications. The page itself is labeled by specialty, as in "Case Study: Obstetrics and Gynecology," because the cases are organized by a wide variety of medical and surgical specialties. Put the specialty label above the title.
+### Case 16 — Respiratory: Barking cough
+Patient: Toddler Eli, 2, has a barking cough, hoarse voice, and noisy breathing at night.
+Question: What is it, and when is it urgent?
+Answer: Croup, a viral swelling of the upper airway. Cool or humid air and sometimes a steroid help. It is urgent if he has noisy breathing at rest, pulls in the skin around the ribs, or looks blue.
 
-## How do I introduce the patient in a case study?
-Open with one sentence that gives the patient's age and sex and the background that matters to the case. The sample describes a 45-year-old female Jehovah's Witness patient with a history of uterine fibroids and severe menorrhagia. Then list the symptoms the patient came in with, such as shortness of breath, fatigue and weakness, and any other relevant history, such as deep venous thrombosis (DVT) and pulmonary emboli (PE). Do not use real names or other identifying details.
+### Case 17 — Respiratory: Long cough
+Patient: Mr. Osei, 45, has coughed for 4 weeks with night sweats and weight loss.
+Question: What serious infection must be ruled out?
+Answer: Tuberculosis (TB). Tests include a chest X-ray and a sputum test. TB needs several months of antibiotics, and the patient may need to stay away from others at first.
 
-## How do I describe the hospital admission and workup?
-State why the patient was admitted. In the sample, she was admitted with iron-deficient anemia for workup and treatment. Then describe each specialist consult and what came from it. After a Hematology consult, the Coumadin she had been taking for her DVT and PE history was discontinued. Gynecology diagnosed multiple large fibroids by transvaginal ultrasound examination. Name the test used to reach the diagnosis, and say whether a bigger treatment, such as a hysterectomy, might be needed.
+### Case 18 — Respiratory: Collapsed lung
+Patient: Dan, 19, tall and thin, has sudden one-sided chest pain and shortness of breath at rest.
+Question: What is likely?
+Answer: A pneumothorax (collapsed lung), where air leaks between the lung and chest wall. A chest X-ray confirms it. Treatment ranges from watching to a chest tube.
 
-## How do I report lab values in a case study?
-Give each lab value with its unit and, when useful, the normal range. The sample reports hemoglobin in g/dL and ferritin in ng/mL, and notes that the normal ferritin level for women is 18-160 compared with the patient's 9. Report hemoglobin at each key point in the timeline: 3.8 g/dL on admission, 5.5 g/dL after 3 weeks, 3.8 g/dL on readmission, 4.9 at discharge, and 8.0 at follow-up. State when a value is too low for surgery.
+### Case 19 — Respiratory: Allergic reaction to peanuts
+Patient: Zoe, 12, eats a cookie and gets hives, a swollen lip, and wheezing.
+Question: What is this, and what is the first treatment?
+Answer: Anaphylaxis, a severe allergic reaction. Give epinephrine (auto-injector) right away and call emergency services, even if she seems to improve.
 
-## How do I describe treatments and doses?
-For each treatment, give the drug name, what it does, the route, the dose and how often it was given. The sample explains that Lupron (leuprolide acetate) is a long-acting depot injection that suppresses LH and FSH and helps stop hemorrhage from uterine fibroids. It gives iron sucrose as 200 mg intravenously daily, darbepoetin alpha as 25 mcg intravenously weekly, and oral iron sulfate as 325 mg twice a day. Also say what the patient took after going home.
+### Case 20 — Respiratory: Snoring and sleepiness
+Patient: Mr. Perez, 55, has a BMI of 34, loud snoring, and falls asleep at work.
+Question: What is the likely diagnosis?
+Answer: Obstructive sleep apnea, where the airway closes during sleep. A sleep study confirms it. Treatment includes weight loss and CPAP, a mask that keeps the airway open.
 
-## How do I show a setback or a readmission?
-Use a time marker such as "four months later" and state why the patient came back. In the sample, she missed one treatment in her Lupron regimen and started to bleed again. She returned with the same symptoms (shortness of breath, fatigue and weakness) and the same hemoglobin level of 3.8 g/dL. Give the new lab values, such as a ferritin level of 9 ng/mL, and then say what the care team did next.
+### Case 21 — Endocrine: Thirst and weight loss
+Patient: Ben, 14, is very thirsty, urinates often, and has lost weight.
+Question: What is the likely diagnosis?
+Answer: Type 1 diabetes, where the body no longer makes insulin. A blood glucose test confirms it. Treatment is insulin.
 
-## How do I describe the procedure and the discharge?
-Say on which hospital day the procedure happened, which department did it, and what it was. In the sample, on her third hospital day the patient was taken to interventional radiology for a uterine artery fibroid embolization. Then give the discharge: two days later she went home with a hemoglobin level of 4.9 on oral iron sulfate, 325 mg twice a day. The Hopkins page also includes an illustration showing uterine artery embolization.
+### Case 22 — Endocrine: Type 2 diabetes
+Patient: Mrs. Wong, 52, has a BMI of 33 and a fasting glucose of 135 mg/dL on two days.
+Question: What is the diagnosis and first approach?
+Answer: Type 2 diabetes, where the body does not use insulin well. First steps are healthy eating, exercise, weight loss, and often metformin. The A1c test shows the average blood sugar over about 3 months.
 
-## How should a case study end? (follow-up and outcome)
-End with the follow-up visit and its result. In the sample, one month later at a follow-up visit in the Hematology Clinic, the hemoglobin level was 8.0, the patient was off Lupron, and she was continuing her oral iron supplements. A good ending states where the follow-up happened, how the key lab value changed, which treatments stopped, and which continue.
+### Case 23 — Endocrine: Low blood sugar
+Patient: A man with diabetes is shaky, sweaty, and confused after skipping lunch but taking insulin.
+Question: What is happening, and what should be done?
+Answer: Hypoglycemia (low blood sugar). If he can swallow, give about 15 grams of fast sugar such as juice, then recheck in 15 minutes. If he is unconscious, call emergency services.
 
-## What tone and length should a case study have?
-Write in short, factual paragraphs in the order the events happened. The sample has three paragraphs after the title: the first covers the presentation and history, the second covers the workup and first treatment, and the third covers the readmission, the procedure and the follow-up. Use plain statements of what was done and what happened, with numbers and units. Stick to the facts of the case.
+### Case 24 — Endocrine: Underactive thyroid
+Patient: Linda, 40, is tired, gaining weight, feels cold, and her TSH is high.
+Question: What is the diagnosis and treatment?
+Answer: Hypothyroidism (underactive thyroid). A high TSH means the brain is asking the thyroid to work harder. Treatment is daily levothyroxine.
 
-## What disclaimer or purpose statement goes with case studies?
-The Hopkins Case Studies page says the purpose is to share the center's experience for its educational value and to describe clinical care methods that worked for its patients. It warns that these methods may not be appropriate for all patients, because each patient and each condition may have unique issues. It also says some treatments may not suit smaller medical centers that lack special equipment or experience. Add that any case you write is fictional and educational, and encourage readers to consult a health professional.
+### Case 25 — Endocrine: Overactive thyroid
+Patient: Kim, 30, loses weight, feels hot, has a tremor, and a fast heartbeat. Her TSH is very low.
+Question: What is likely?
+Answer: Hyperthyroidism, often from Graves disease. Treatment can include medicines that lower thyroid hormone. Rule of thumb: high TSH means underactive, low TSH means overactive.
 
-## What kinds of cases can be written?
-Cases can range from commonly seen, routine medical conditions to rare or uniquely challenging ones. The Hopkins cases are organized by a wide variety of medical and surgical specialties, for example Obstetrics and Gynecology. The related clinician resources cover Medicine and Surgery, Pediatrics, Diseases and Conditions, and Bioethics and Law, so these are also useful category labels for new cases.
+### Case 26 — Endocrine: Prediabetes
+Patient: Mr. Reed, 47, has an A1c of 6.1%.
+Question: What does this mean?
+Answer: Prediabetes (A1c 5.7 to 6.4%). Blood sugar is higher than normal but not yet diabetes. Healthy eating, exercise, and weight loss can prevent type 2 diabetes. Recheck about once a year.
 
-## Can the chatbot invent patient details for a case study?
-Only as a clearly labeled fictional, educational case. Never use a real patient's name or identifying details, and never present an invented case as a real Hopkins case. For doses and lab values, use only the facts found in the notes. If a number is not in the notes, leave it out or say it is not available. Remind the reader to check with a health professional before acting on anything in a case study.
+### Case 27 — Endocrine: Diabetic emergency
+Patient: A teen with type 1 diabetes has nausea, belly pain, fruity breath, and fast deep breathing.
+Question: What is the emergency?
+Answer: Diabetic ketoacidosis (DKA), when the body lacks insulin and makes acids called ketones. It needs hospital care with fluids and insulin.
 
-## How should the bot use the practice cases?
-When a student asks for a practice case, quiz, or case study, the bot picks one practice case, presents the case, and asks the question. It then waits for the student's answer. After the student answers, the bot compares the answer with the key points, says what the student got right, and adds anything missing in a friendly, brief way. The bot can pick a case by topic if the student asks for one, such as stress, nutrition, or alcohol. Every case is fictional and educational. For real health concerns, the bot encourages the student to talk to a health professional or campus health services.
+### Case 28 — Endocrine: Long-term steroids
+Patient: Mr. Young, 60, took steroid pills for months and now has a round face and easy bruising.
+Question: What happened, and should he stop the pills on his own?
+Answer: These are side effects of steroids that look like Cushing syndrome. He should not stop suddenly, because the body needs time to restart its own steroid hormones. He should talk to his doctor about a plan.
 
-## Practice case: college student with stress and poor sleep before exams
-Case (fictional, educational): A 20-year-old student sleeps about 4 to 5 hours a night during exam week. They drink coffee in the evening, scroll their phone in bed, and feel anxious and tired during the day.
-Question for the student: Which habits could this student change to manage stress and sleep better?
-Key points: keep a regular sleep schedule; avoid caffeine late in the day; keep screens out of bed; fit in exercise and short study breaks; try relaxation such as deep breathing; talk to a friend or advisor. If the problems continue, contact campus counseling or the health center.
+### Case 29 — Digestive: Heartburn
+Patient: Tom, 38, has burning behind the breastbone after meals, worse when lying down.
+Question: What is it, and what helps?
+Answer: Acid reflux (GERD). Helpful steps are smaller meals, avoiding late meals and trigger foods, raising the head of the bed, and antacids or acid reducers. See a doctor if it is frequent, or if he has trouble swallowing or weight loss.
 
-## Practice case: student skipping breakfast and eating from the vending machine (nutrition)
-Case (fictional, educational): A 19-year-old student skips breakfast, eats chips and soda from a vending machine for lunch, and has a large dinner late at night. By mid-afternoon they feel low on energy.
-Question for the student: What changes would you suggest?
-Key points: eat regular, balanced meals; include fruits, vegetables, whole grains, and protein; plan healthy snacks ahead of time; drink water instead of soda; read nutrition labels; avoid very large meals late at night.
+### Case 30 — Digestive: Right lower belly pain
+Patient: Chloe, 16, has belly pain that started near the navel and moved to the lower right side, with nausea and fever.
+Question: What is the likely diagnosis?
+Answer: Appendicitis, inflammation of the appendix. It usually needs surgery to remove it. This is urgent.
 
-## Practice case: inactive student who wants to start exercising (fitness)
-Case (fictional, educational): A 21-year-old student sits most of the day, has not exercised in a year, and wants to get fit but does not know where to start.
-Question for the student: How should this student begin?
-Key points: start small and build up gradually; choose activities they enjoy; set realistic goals; general guidance for adults is about 150 minutes of moderate aerobic activity per week plus muscle-strengthening activities on 2 days; a student with health concerns should check with a health provider first.
+### Case 31 — Digestive: Pain after fatty meals
+Patient: Mrs. Davis, 40, has pain in the upper right belly after fatty meals.
+Question: What is likely, and what test helps?
+Answer: Gallstones. A belly ultrasound shows them. If they cause repeated attacks, the gallbladder may be removed.
 
-## Practice case: weekend binge drinking and alcohol risks
-Case (fictional, educational): A 20-year-old goes out every weekend and often has many drinks in a short time.
-Question for the student: What are the risks, and what safer choices could this student make?
-Key points: risks include impaired judgment, injuries, accidents, blackouts, and alcohol poisoning. Safer choices: set a limit, eat first, alternate drinks with water, never drive after drinking, and stay with trusted friends. Warning signs of alcohol poisoning are confusion, repeated vomiting, slow or irregular breathing, and passing out. In these cases, call emergency services (911 in the US) right away.
+### Case 32 — Digestive: Vomiting and diarrhea
+Patient: Ray, 24, has watery diarrhea and vomiting for 2 days after a picnic.
+Question: What is the main treatment?
+Answer: Gastroenteritis (stomach bug). The main treatment is fluids, ideally oral rehydration solution, plus rest. Seek care for blood in the stool, signs of dehydration, or symptoms longer than a few days.
 
-## Practice case: student who vapes and wants to quit tobacco or nicotine
-Case (fictional, educational): A 22-year-old vapes every day and wants to quit, but gets irritable and has strong cravings for nicotine.
-Question for the student: What could help this student quit?
-Key points: nicotine is addictive, and cravings and irritability are common when quitting; set a quit date; identify and avoid triggers; ask friends and family for support; talk to a health provider or the campus health center about quit programs and medication options. In the US, the free quitline 1-800-QUIT-NOW offers support.
+### Case 33 — Digestive: Bloating after milk
+Patient: Aisha, 20, has gas, cramps, and diarrhea 30 minutes after drinking milk.
+Question: What is likely?
+Answer: Lactose intolerance, when the body lacks enough lactase to digest milk sugar. She can limit dairy, choose lactose-free products, or use lactase tablets. This is different from a milk allergy.
 
-## Practice case: preventing the flu and other infectious diseases
-Case (fictional, educational): During flu season, a student shares drinks with friends, rarely washes their hands, and goes to class while sick with a fever and a cough.
-Question for the student: What could this student do to protect themselves and others?
-Key points: wash hands often with soap and water; get a yearly flu vaccine; cover coughs and sneezes; do not share drinks or utensils; stay home when sick with a fever; see a health provider if symptoms are severe.
+### Case 34 — Digestive: Yellow skin
+Patient: Mr. Cole, 50, has yellow skin and eyes and dark urine.
+Question: What is this sign, and what tests are used?
+Answer: Jaundice, caused by too much bilirubin. Liver blood tests and an ultrasound help find the cause, such as hepatitis, gallstones, or liver disease.
 
-## Practice case: keeping your heart healthy with a family history of high blood pressure
-Case (fictional, educational): A 19-year-old's parent was recently diagnosed with high blood pressure. The student often eats fast food and smokes occasionally.
-Question for the student: What can this student do now to keep their heart healthy?
-Key points: eat more fruits, vegetables, and whole grains, and cut back on salty foods; be physically active; avoid tobacco; limit alcohol; get regular checkups that include blood pressure; share the family history with a health provider.
+### Case 35 — Digestive: Black stools
+Patient: Mr. Fox, 66, uses ibuprofen daily and now has black, tarry stools.
+Question: What is the concern?
+Answer: Bleeding in the upper digestive tract, often from a stomach ulcer made worse by NSAIDs like ibuprofen. This needs urgent medical care.
 
-## Practice case: how to tell if health information online is reliable
-Case (fictional, educational): A student sees a social media post saying a supplement cures anxiety in one week. The post links to a store that sells it.
-Question for the student: How can the student decide whether this information is reliable?
-Key points: check who wrote it and their credentials; look for evidence from research; prefer government, university, and professional organization websites; watch for sales pitches and bold promises; compare several sources; check the date; ask a health professional before taking a supplement.
+### Case 36 — Digestive: Constipation
+Patient: Hana, 29, has had hard stools for 4 days and eats little fiber.
+Question: What simple advice helps, and what are red flags?
+Answer: More fiber (fruits, vegetables, whole grains), more water, and exercise. Red flags are blood in the stool, weight loss, severe pain, or a major change that lasts.
 
-## Practice case: lowering the risk of sexually transmitted infections (STIs)
-Case (fictional, educational): A student who is starting a new relationship wants to know how to lower the risk of sexually transmitted infections.
-Question for the student: What steps can reduce the risk?
-Key points: talk openly with a partner; use condoms correctly every time; get tested regularly; get vaccines such as HPV and hepatitis B; abstinence is the only sure way to avoid STIs; the campus health center can provide testing and advice.
+### Case 37 — Urinary: Burning urination
+Patient: Emma, 24, has burning with urination and needs to go often, with no fever.
+Question: What is likely, and how is it checked?
+Answer: A urinary tract infection (UTI). A urine test confirms it. Antibiotics treat it, and drinking fluids helps.
 
-## Practice case: student feeling sad and withdrawn for weeks (mental health)
-Case (fictional, educational): A 21-year-old student has felt sad and unmotivated for several weeks, has pulled away from friends, and sleeps much more than usual.
-Question for the student: What should this student do, and what would you say to a friend in this situation?
-Key points: these feelings are common and treatable, and asking for help is a strength; talk to a trusted person; contact campus counseling or a health provider; keep routines for sleep, meals, and activity. If someone has thoughts of harming themselves, call or text 988 (the US Suicide & Crisis Lifeline) or emergency services right away.
+### Case 38 — Urinary: Pain in waves
+Patient: Mr. Lopez, 40, has severe side pain that comes in waves, with blood in the urine.
+Question: What is likely, and what test helps?
+Answer: A kidney stone. A CT scan or ultrasound shows it. Treatment includes pain control and fluids, and sometimes a procedure for larger stones.
 
-## Practice case: running outside in the heat (heat-related illness)
-Case (fictional, educational): A student goes for a run at noon on a hot, humid day without water. They start to feel dizzy, nauseated, and very sweaty.
-Question for the student: What might be happening, and what should the student do?
-Key points: these can be signs of heat-related illness such as heat exhaustion; stop the activity, move to a cool shaded place, drink water, and loosen clothing; get medical help if symptoms get worse, and call emergency services if there is confusion or fainting. Prevent it by exercising in cooler hours, staying hydrated, and wearing light clothing.
+### Case 39 — Urinary: Kidney infection
+Patient: Mia, 30, has UTI symptoms plus fever, chills, and back pain.
+Question: What does this suggest?
+Answer: Pyelonephritis, a kidney infection. It needs prompt treatment with antibiotics and sometimes the hospital.
 
-## Practice case: biking at night without a helmet (injury prevention)
-Case (fictional, educational): A student bikes to class at night without a helmet or lights and listens to music through headphones.
-Question for the student: How can this student reduce the risk of injury?
-Key points: wear a helmet; use front and rear lights and reflective gear; follow traffic rules; keep headphones low or off so traffic can be heard; stay visible and alert.
+### Case 40 — Urinary: Weak stream
+Patient: Mr. Green, 68, gets up three times a night and has a weak urine stream.
+Question: What is likely?
+Answer: Benign prostatic hyperplasia (BPH), an enlarged prostate that is not cancer. A doctor does an exam and may order tests. Medicines can help.
 
-## Practice case: understanding premium, deductible, and copay (health insurance)
-Case (fictional, educational): A student just got a health insurance plan and does not understand the terms premium, deductible, and copay.
-Question for the student: How would you explain each term?
-Key points: a premium is the regular payment, usually monthly, to keep coverage; a deductible is the amount you pay out of pocket before insurance starts paying for many services; a copay is a fixed amount you pay for a visit or prescription; in-network providers usually cost less.
+### Case 41 — Urinary: Long-term kidney risk
+Patient: Mr. Shah, 55, has had diabetes and high blood pressure for years.
+Question: Which two tests check his kidneys?
+Answer: A urine albumin (protein) test and blood creatinine used to calculate eGFR. Diabetes and high blood pressure are the two biggest causes of chronic kidney disease.
 
-## Practice case: how where you live affects your health (social determinants of health)
-Case (fictional, educational): In one neighborhood there are grocery stores with fresh food, parks, and nearby clinics. In another there are few grocery stores, no safe place to exercise, and the nearest clinic is far away.
-Question for the student: How could where people live affect their health?
-Key points: social determinants of health are the conditions in which people are born, live, learn, and work. Access to healthy food, safe places to be active, health care, income, education, and housing all shape health and can lead to health disparities between communities.
+### Case 42 — Urinary: Heat and dark urine
+Patient: A hiker is dizzy in the heat and has dark urine.
+Question: What is the likely cause and fix?
+Answer: Dehydration. Move to shade, rest, and drink fluids. Dark urine is a simple sign that the body needs more water.
+
+### Case 43 — Blood: Tired and pale
+Patient: Nora, 28, is tired and pale and has heavy periods.
+Question: What is likely, and what tests help?
+Answer: Iron deficiency anemia. A complete blood count (CBC) and ferritin test help. Treatment includes iron and treating the cause of blood loss.
+
+### Case 44 — Blood: Vegan with tingling
+Patient: Carl, 34, is a strict vegan with tingling hands and fatigue.
+Question: Which vitamin is likely low?
+Answer: Vitamin B12, found mainly in animal foods. Vegans need fortified foods or supplements.
+
+### Case 45 — Blood: Sickle cell pain
+Patient: Dre, 12, has sickle cell disease and sudden severe bone pain.
+Question: What is happening, and what helps?
+Answer: A pain crisis, when sickle-shaped red cells block small vessels. Treatment includes fluids, pain control, and care from his medical team.
+
+### Case 46 — First aid: Nosebleed
+Patient: A student gets a nosebleed in class.
+Question: What is the right first aid?
+Answer: Sit up, lean slightly forward, and pinch the soft part of the nose for 10 minutes. Do not tilt the head back. Seek care if it lasts over 20 minutes.
+
+### Case 47 — Allergy: Sneezing in spring
+Patient: Tyler, 17, sneezes and has itchy eyes every spring.
+Question: What is likely, and what helps?
+Answer: Seasonal allergic rhinitis (hay fever). Helpful steps are avoiding pollen, saline rinses, and antihistamines or nasal steroid sprays.
+
+### Case 48 — Allergy: Rash after antibiotics
+Patient: Mrs. Kim has a rash and lip swelling after taking a new antibiotic.
+Question: What should she do?
+Answer: Stop the medicine and get medical help right away, especially if breathing is hard. Write the drug down as a possible allergy so future doctors know.
+
+### Case 49 — Allergy: Shrimp hives
+Patient: Ivan, 25, gets hives after eating shrimp but has no trouble breathing.
+Question: What should he do?
+Answer: This is a food allergy. Avoid shrimp, and talk to a doctor about testing and an epinephrine plan. Trouble breathing or throat swelling needs emergency care.
+
+### Case 50 — Vaccines: Sore arm
+Patient: Ella, 30, has a sore arm and low fever after a flu shot.
+Question: Is this dangerous?
+Answer: No. Mild soreness and low fever are common, short-lived signs that the immune system is responding. Call a doctor for hives, trouble breathing, or swelling of the face.
+
+### Case 51 — Infection: Teen with swollen glands
+Patient: Jade, 17, has fever, sore throat, extreme tiredness, and swollen neck glands for a week.
+Question: What is likely, and what activity should she avoid?
+Answer: Infectious mononucleosis ("mono"), often from the Epstein-Barr virus. Treatment is rest and fluids. She should avoid contact sports for several weeks because the spleen can be enlarged and may rupture.
+
+### Case 52 — Infection: Itchy blisters
+Patient: Kai, 5, has fever and an itchy rash with blisters in different stages.
+Question: What is the diagnosis, and how is it prevented?
+Answer: Chickenpox (varicella). It is prevented with the varicella vaccine. Keep him home until all blisters have crusted over, and avoid giving aspirin to children.
+
+### Case 53 — Infection: Sudden fever and aches
+Patient: Mr. Bell, 45, has sudden fever, body aches, headache, and a dry cough in winter.
+Question: What is likely, and how can it be prevented?
+Answer: Influenza (the flu). Rest and fluids help, and antiviral medicine works best when started early, especially for high-risk people. A yearly flu vaccine is the best prevention.
+
+### Case 54 — Infection: Bullseye rash
+Patient: Hiker Rosa has an expanding red ring rash and fatigue 10 days after a tick bite.
+Question: What is the diagnosis and treatment?
+Answer: Lyme disease, spread by ticks. Treatment is a course of antibiotics such as doxycycline. Prevent it with long clothing, tick checks, and prompt tick removal.
+
+### Case 55 — First aid: Dog bite
+Patient: A child is bitten by a neighbor's dog and the skin is broken.
+Question: What should be done first?
+Answer: Wash the wound well with soap and water for several minutes, apply pressure if it bleeds, and see a doctor. The doctor will check tetanus status and decide whether rabies treatment is needed.
+
+### Case 56 — Infection: Rusty nail
+Patient: Mr. Webb steps on a rusty nail. His last tetanus shot was 12 years ago.
+Question: What is needed?
+Answer: Clean the wound and get a tetanus booster. Boosters are recommended every 10 years, or sooner for a dirty wound if it has been over 5 years.
+
+### Case 57 — Infection: Red warm leg
+Patient: Mrs. Yang has a red, hot, tender patch on her shin with a fever.
+Question: What is likely?
+Answer: Cellulitis, a bacterial skin infection. It is treated with antibiotics. See a doctor quickly if redness spreads fast.
+
+### Case 58 — Infection: Diarrhea after antibiotics
+Patient: Mr. Dunn took antibiotics last week and now has severe watery diarrhea and belly cramps.
+Question: What infection is suspected?
+Answer: Clostridioides difficile (C. diff). Antibiotics can disrupt normal gut bacteria. A stool test confirms it. This is one reason antibiotics should only be used when needed.
+
+### Case 59 — Infection: Burning and discharge
+Patient: A college student has burning urination and discharge.
+Question: What should he do?
+Answer: Get tested for sexually transmitted infections such as chlamydia and gonorrhea. These are treatable. Partners should be treated too, and condoms lower risk.
+
+### Case 60 — Infection: Stiff neck
+Patient: Teen Leah has fever, severe headache, a stiff neck, and dislikes bright light.
+Question: What must be ruled out immediately?
+Answer: Meningitis, an infection around the brain and spinal cord. It is an emergency. Call emergency services.
+
+### Case 61 — Infection: Fevers after travel
+Patient: Mr. Allen returns from a trip to sub-Saharan Africa with fevers that come and go.
+Question: What should be tested?
+Answer: Malaria, spread by mosquitoes. A blood smear or rapid test confirms it. Prevention includes mosquito nets, repellent, and preventive medicine before travel.
+
+### Case 62 — Pediatrics: Fever in a newborn
+Patient: A 6-week-old baby has a temperature of 38.5 °C (101.3 °F).
+Question: Is it okay to wait at home?
+Answer: No. Fever in a baby under 3 months is treated as an emergency because serious infections can hide. The baby needs urgent medical evaluation.
+
+### Case 63 — Pediatrics: Ear tugging
+Patient: Toddler Noah, 2, has a fever and tugs at his ear.
+Question: What is likely?
+Answer: Otitis media, a middle ear infection. Pain relief helps, and doctors may watch for a day or two or prescribe an antibiotic depending on age and severity.
+
+### Case 64 — Pediatrics: No wet diapers
+Patient: A baby has vomiting and diarrhea and no wet diaper for 8 hours.
+Question: What is the concern?
+Answer: Dehydration. Small frequent sips of oral rehydration solution can help, but she needs prompt medical care, especially with no wet diapers.
+
+### Case 65 — Pediatrics: Slapped cheeks
+Patient: Lily, 6, has bright red cheeks and a lacy rash on her arms.
+Question: What is it?
+Answer: Fifth disease (parvovirus B19). It is usually mild and goes away on its own. It can matter for pregnant women or people with certain blood disorders.
+
+### Case 66 — Pediatrics: Mouth sores and hand rash
+Patient: Child Max, 3, has mouth sores, a low fever, and spots on the palms and soles.
+Question: What is the diagnosis?
+Answer: Hand, foot, and mouth disease, a common viral illness. Treatment is comfort care and fluids. Wash hands often because it spreads easily.
+
+### Case 67 — Pediatrics: Dry itchy skin
+Patient: Baby Ava has itchy red rough patches behind her knees and in her elbow creases.
+Question: What is likely, and what helps?
+Answer: Eczema (atopic dermatitis). Daily moisturizer, short lukewarm baths, avoiding triggers, and sometimes a mild steroid cream help.
+
+### Case 68 — Pediatrics: Crusty sores
+Patient: Child Ben, 4, has honey-colored crusted sores around the nose and mouth.
+Question: What is likely?
+Answer: Impetigo, a contagious bacterial skin infection. It is treated with antibiotic ointment or pills. Keep nails short and wash hands.
+
+### Case 69 — Pediatrics: Swallowed a button battery
+Patient: A toddler swallowed a small round button battery.
+Question: What should the parent do?
+Answer: Go to the emergency room immediately. Do not wait for symptoms and do not induce vomiting. The battery can burn the esophagus within hours.
+
+### Case 70 — Pediatrics: Head bump
+Patient: A child falls from a swing, hits her head, then vomits repeatedly and is very sleepy.
+Question: Is this okay to watch at home?
+Answer: No. Repeated vomiting and unusual sleepiness after a head injury are warning signs. She needs emergency evaluation.
+
+### Case 71 — Pediatrics: Vaccines at 2 months
+Patient: A baby comes for the 2-month checkup.
+Question: Which vaccines are usually given?
+Answer: In the US, usually DTaP, polio (IPV), Hib, pneumococcal (PCV), hepatitis B, and rotavirus. Always follow the current schedule from the CDC or the child's doctor.
+
+### Case 72 — Pediatrics: Seizure with fever
+Patient: A 2-year-old has a short shaking episode while she has a high fever.
+Question: What is this, and what should the parent do?
+Answer: Likely a febrile seizure, which is frightening but usually harmless. Place her on her side, do not put anything in her mouth, and time it. Call emergency services if it lasts over 5 minutes or she does not wake up.
+
+### Case 73 — Pediatrics: Slow weight gain
+Patient: A 2-month-old is breastfed and gaining weight slowly.
+Question: What is a good first step?
+Answer: A feeding assessment, including weighing the baby and watching a feed. A lactation consultant can help with latch and milk supply. The doctor also checks for other causes.
+
+### Case 74 — Pregnancy: Missed period
+Patient: Sara, 26, has a missed period and morning nausea.
+Question: What is the first test and a key vitamin?
+Answer: A pregnancy test (hCG) in urine or blood. Folic acid helps prevent neural tube defects and is recommended before and early in pregnancy.
+
+### Case 75 — Pregnancy: High pressure and headache
+Patient: Dina, 34 weeks pregnant, has blood pressure of 150/100, a headache, and swelling of the face.
+Question: What is the concern?
+Answer: Preeclampsia, a pregnancy condition with high blood pressure and organ strain. She needs urgent medical evaluation. Protein in the urine is one clue.
+
+### Case 76 — Pregnancy: Glucose test
+Patient: A woman at 26 weeks has a high result on a glucose tolerance test.
+Question: What is the diagnosis?
+Answer: Gestational diabetes. It is managed with healthy eating, activity, blood sugar checks, and sometimes insulin. It often resolves after birth but raises later diabetes risk.
+
+### Case 77 — Pregnancy: Early bleeding
+Patient: A woman at 7 weeks has spotting and cramps, then sudden severe one-sided belly pain and dizziness.
+Question: What is the emergency?
+Answer: A possible ectopic pregnancy, where the embryo grows outside the uterus, usually in a fallopian tube. It can cause serious bleeding and is an emergency.
+
+### Case 78 — Newborn: Yellow baby
+Patient: A newborn looks yellow on day 3 and feeds well.
+Question: Is it normal?
+Answer: Mild newborn jaundice is common. The doctor checks bilirubin levels. Frequent feeding helps, and light therapy treats higher levels.
+
+### Case 79 — Women's health: Painful periods
+Patient: Zara, 19, has painful periods that make her miss class.
+Question: What may help?
+Answer: Heat, exercise, and NSAIDs such as ibuprofen taken early. If pain is severe or worsening, a doctor can check for conditions like endometriosis.
+
+### Case 80 — Women's health: Irregular periods and acne
+Patient: Gina, 24, has irregular periods, acne, and extra facial hair.
+Question: What is suspected?
+Answer: Polycystic ovary syndrome (PCOS). A doctor does an exam and blood tests. Treatment may include healthy lifestyle changes and medicines for symptoms.
+
+### Case 81 — Women's health: Hot flashes
+Patient: Mrs. Ruiz, 52, has had no period for 12 months and has hot flashes.
+Question: What stage is this?
+Answer: Menopause, defined as 12 months without a period. Treatments for symptoms exist, so she can talk with her doctor about options.
+
+### Case 82 — Women's health: Pap test
+Patient: A 22-year-old asks why she needs a Pap test.
+Question: What does it screen for?
+Answer: Changes in cervical cells that can lead to cervical cancer, often caused by HPV. The HPV vaccine also helps prevent this cancer.
+
+### Case 83 — Women's health: Painful breast
+Patient: A breastfeeding mother has a red, hard, painful area on one breast and a fever.
+Question: What is likely?
+Answer: Mastitis, inflammation or infection of breast tissue. Keep feeding or pumping, rest, and call her doctor, who may prescribe antibiotics.
+
+### Case 84 — Pregnancy: Severe nausea
+Patient: A woman at 9 weeks cannot keep food or fluids down and is losing weight.
+Question: What is this called?
+Answer: Hyperemesis gravidarum, severe pregnancy nausea and vomiting. It needs medical care, sometimes with IV fluids and medicine.
+
+### Case 85 — Pregnancy: Rh negative
+Patient: A pregnant woman has Rh-negative blood.
+Question: What is the concern?
+Answer: Her body could make antibodies against Rh-positive blood from a baby, harming future pregnancies. A shot called anti-D immunoglobulin prevents this.
+
+### Case 86 — Postpartum: Tearful after birth
+Patient: Two days after giving birth, Kim feels weepy and anxious, but it eases within two weeks.
+Question: Is this normal, and when should she seek help?
+Answer: Baby blues are common and usually go away within about 2 weeks. If sadness is deep, lasts longer, or she cannot care for herself or the baby, she may have postpartum depression and should contact a doctor right away.
+
+### Case 87 — Neurology: Migraine
+Patient: Alex, 28, has throbbing one-sided headaches with nausea and light sensitivity.
+Question: What is likely, and what helps?
+Answer: Migraine. Resting in a dark quiet room, early pain medicine, and avoiding triggers such as poor sleep or certain foods help. A doctor can offer preventive and specific migraine medicines.
+
+### Case 88 — Neurology: Stroke signs
+Patient: Mr. Ford suddenly has a drooping face, weak right arm, and slurred speech.
+Question: What is the emergency and what memory tool helps?
+Answer: A stroke. Use FAST: Face drooping, Arm weakness, Speech trouble, Time to call emergency services. Fast treatment saves brain tissue.
+
+### Case 89 — Neurology: Worst headache
+Patient: A woman suddenly has the worst headache of her life.
+Question: How urgent is this?
+Answer: Very urgent. A sudden severe headache can mean bleeding in or around the brain. Call emergency services.
+
+### Case 90 — Neurology: Spinning with head turns
+Patient: Mrs. Lane, 60, has brief spinning when she rolls over in bed.
+Question: What is likely?
+Answer: Benign paroxysmal positional vertigo (BPPV), caused by small crystals moving in the inner ear. A simple repositioning maneuver (Epley) often fixes it.
+
+### Case 91 — Neurology: Shaking at rest
+Patient: Mr. Moore, 70, has a hand tremor at rest, slow movements, and stiffness.
+Question: What is likely?
+Answer: Parkinson disease, caused by loss of dopamine-producing brain cells. Treatment aims to restore dopamine effects and includes exercise and therapy.
+
+### Case 92 — Neurology: Memory loss
+Patient: Mrs. Cruz, 78, gets lost in familiar places and forgets recent events.
+Question: What should happen next?
+Answer: A medical evaluation for dementia, such as Alzheimer disease, including memory testing and checking for treatable causes like low B12, thyroid problems, or medicine effects.
+
+### Case 93 — First aid: Seizure
+Patient: A classmate has a seizure with shaking.
+Question: What is the correct first aid?
+Answer: Stay calm, time it, move hard objects away, cushion the head, and turn her on her side when shaking stops. Do not hold her down or put anything in her mouth. Call emergency services if it lasts over 5 minutes.
+
+### Case 94 — Neurology: Numb feet
+Patient: Mr. Ellis, 58, has diabetes and numb, tingling feet.
+Question: What is likely, and what should he do daily?
+Answer: Peripheral neuropathy from nerve damage. Good blood sugar control helps, and he should check his feet every day for cuts or sores.
+
+### Case 95 — Neurology: Band-like headache
+Patient: A student has a dull, tight headache across the forehead during exams.
+Question: What is likely?
+Answer: A tension-type headache. Rest, water, stretching, stress management, and over-the-counter pain relief help.
+
+### Case 96 — Mental health: Constant worry
+Patient: Jordan, 21, worries about everything, can't relax, and sleeps poorly for 6 months.
+Question: What may be going on, and what helps?
+Answer: Possibly generalized anxiety disorder. Helpful options include cognitive behavioral therapy (CBT), exercise, sleep habits, and sometimes medicine. A professional can diagnose.
+
+### Case 97 — Mental health: Low mood
+Patient: Sam, 19, has felt sad, lost interest in activities, and has low energy for over 2 weeks.
+Question: What should Sam do?
+Answer: This may be depression, which is common and treatable. Talk with a doctor or counselor. Therapy and medicine both help. If Sam ever has thoughts of self-harm, contact a crisis line or emergency services right away (in the US, call or text 988).
+
+### Case 98 — Mental health: Panic attack
+Patient: A student suddenly has a racing heart, chest tightness, tingling, and fear of dying that peaks in 10 minutes.
+Question: What is likely, and what helps?
+Answer: A panic attack. Slow breathing and grounding help. First-time chest symptoms should still be checked by a doctor to rule out heart problems.
+
+### Case 99 — Mental health: Can't sleep
+Patient: Ty, 23, lies awake for hours most nights.
+Question: What habits help?
+Answer: Sleep hygiene: regular bedtime and wake time, no screens or caffeine late, a cool dark room, and exercise earlier in the day. Persistent insomnia should be discussed with a doctor.
+
+### Case 100 — Mental health: Exam stress
+Patient: A student feels overwhelmed before finals.
+Question: What helps manage stress?
+Answer: Plan study blocks with breaks, sleep 7 or more hours, move daily, eat regular meals, and talk to friends or campus counseling. Stress that stops daily functioning deserves professional support.
