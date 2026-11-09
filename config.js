@@ -2,7 +2,7 @@ window.CONFIG = {
   MODEL: "gemini-3.8-flash",
 
   // Paste your NEW key between the quotes (not the one shared in chat).
-  API_KEY: "PASTE_YOUR_NEW_KEY_HERE",
+  API_KEY: "AQ.Ab8RN6K7pVhiHE99te-6ZBiwP3uL52aiwX1-wsgPva-a7Ipd6A",
 
   WELCOME: "Hi there! 👋 I'm MedLearn, your case study buddy. I create short, fictional patient cases for you to solve step by step. Pick a starter below or tell me a topic!",
 
