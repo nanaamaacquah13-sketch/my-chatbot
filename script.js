@@ -1,209 +1,222 @@
-const C = window.CONFIG;
 const chat = document.getElementById("chat");
-const startersBox = document.getElementById("starters");
-const form = document.getElementById("form");
-const input = document.getElementById("input");
-const sendBtn = document.getElementById("send");
-const toggle = document.getElementById("themeToggle");
+const input = document.getElementById("userInput");
+const sendBtn = document.getElementById("sendBtn");
+const startersEl = document.getElementById("starters");
+const themeBtn = document.getElementById("themeBtn");
+const infoBtn = document.getElementById("infoBtn");
+const infoDialog = document.getElementById("infoDialog");
+const closeInfo = document.getElementById("closeInfo");
+const canvas = document.getElementById("confetti");
+const ctx = canvas.getContext("2d");
 
 let history = [];
-let chunks = [];
-let chunkVectors = null;
 let busy = false;
 
-// ---------- Light / dark mode ----------
-function setTheme(t) {
-  document.documentElement.setAttribute("data-theme", t);
-  toggle.textContent = t === "dark" ? "☀️" : "🌙";
-  try { localStorage.setItem("theme", t); } catch (e) {}
-}
-let savedTheme = null;
-try { savedTheme = localStorage.getItem("theme"); } catch (e) {}
-setTheme(savedTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
-toggle.onclick = () =>
-  setTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
-
-// ---------- Confetti ----------
-const cv = document.getElementById("confetti");
-const cx = cv.getContext("2d");
-function confetti() {
-  cv.width = innerWidth;
-  cv.height = innerHeight;
-  const colors = ["#BA0C2F", "#ffd166", "#06d6a0", "#118ab2", "#ef476f", "#ffffff"];
-  const bits = Array.from({ length: 140 }, () => ({
-    x: innerWidth / 2,
-    y: innerHeight * 0.6,
-    vx: (Math.random() - 0.5) * 16,
-    vy: -Math.random() * 16 - 4,
-    s: Math.random() * 8 + 4,
-    c: colors[Math.floor(Math.random() * colors.length)],
-    r: Math.random() * 6.28,
-    vr: (Math.random() - 0.5) * 0.4
-  }));
-  let frame = 0;
-  (function step() {
-    cx.clearRect(0, 0, cv.width, cv.height);
-    bits.forEach(p => {
-      p.vy += 0.35; p.x += p.vx; p.y += p.vy; p.r += p.vr;
-      cx.save();
-      cx.translate(p.x, p.y);
-      cx.rotate(p.r);
-      cx.fillStyle = p.c;
-      cx.fillRect(-p.s / 2, -p.s / 2, p.s, p.s * 0.6);
-      cx.restore();
-    });
-    if (++frame < 150) requestAnimationFrame(step);
-    else cx.clearRect(0, 0, cv.width, cv.height);
-  })();
+/* ---------- Light / dark toggle ---------- */
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  themeBtn.textContent = theme === "dark" ? "☀️" : "🌙";
+  try { localStorage.setItem("medlearn-theme", theme); } catch (e) {}
 }
 
-// ---------- Messages ----------
-function fmt(t) {
-  return t
-    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+(function initTheme() {
+  let saved = null;
+  try { saved = localStorage.getItem("medlearn-theme"); } catch (e) {}
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  applyTheme(saved || (prefersDark ? "dark" : "light"));
+})();
+
+themeBtn.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme");
+  applyTheme(current === "dark" ? "light" : "dark");
+});
+
+/* ---------- Info pop-up ---------- */
+infoBtn.addEventListener("click", () => infoDialog.showModal());
+closeInfo.addEventListener("click", () => infoDialog.close());
+infoDialog.addEventListener("click", (e) => {
+  if (e.target === infoDialog) infoDialog.close();
+});
+
+/* ---------- Messages ---------- */
+function formatText(text) {
+  const safe = text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  return safe
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/^[-*] (.+)$/gm, "• $1")
     .replace(/\n/g, "<br>");
 }
-function addMsg(role, text, notes) {
-  const div = document.createElement("div");
-  div.className = "msg " + role;
-  if (role === "bot") div.innerHTML = fmt(text);
-  else div.textContent = text;
-  if (notes && notes.length) {
-    const s = document.createElement("div");
-    s.className = "sources";
-    s.textContent = "Notes searched: " + notes.map((n, i) => "[" + (i + 1) + "] " + n.text.slice(0, 50) + "…").join("  ");
-    div.appendChild(s);
+
+function copyText(text, button) {
+  const done = () => {
+    button.textContent = "Copied!";
+    setTimeout(() => (button.textContent = "Copy"), 1500);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+  } else {
+    fallbackCopy(text, done);
   }
-  chat.appendChild(div);
+}
+
+function fallbackCopy(text, done) {
+  const area = document.createElement("textarea");
+  area.value = text;
+  document.body.appendChild(area);
+  area.select();
+  try { document.execCommand("copy"); done(); } catch (e) {}
+  area.remove();
+}
+
+function addMessage(role, text) {
+  const wrap = document.createElement("div");
+  wrap.className = "msg " + role;
+
+  const bubble = document.createElement("div");
+  bubble.className = "bubble";
+  bubble.innerHTML = formatText(text);
+  wrap.appendChild(bubble);
+
+  if (role === "bot") {
+    const copyBtn = document.createElement("button");
+    copyBtn.className = "copy-btn";
+    copyBtn.type = "button";
+    copyBtn.textContent = "Copy";
+    copyBtn.addEventListener("click", () => copyText(text, copyBtn));
+    wrap.appendChild(copyBtn);
+  }
+
+  chat.appendChild(wrap);
   chat.scrollTop = chat.scrollHeight;
-  return div;
+  return wrap;
 }
 
-// ---------- Gemini API ----------
-async function api(path, body) {
-  const r = await fetch("https://generativelanguage.googleapis.com/v1beta/" + path, {
+function showTyping() {
+  const wrap = document.createElement("div");
+  wrap.className = "msg bot typing";
+  wrap.innerHTML = '<div class="bubble">Thinking...</div>';
+  chat.appendChild(wrap);
+  chat.scrollTop = chat.scrollHeight;
+  return wrap;
+}
+
+/* ---------- Gemini call ---------- */
+async function askGemini() {
+  const res = await fetch("/.netlify/functions/chat", {
     method: "POST",
-    headers: { "Content-Type": "application/json", "x-goog-api-key": C.API_KEY },
-    body: JSON.stringify(body)
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: CONFIG.SYSTEM_PROMPT }] },
+      contents: history
+    })
   });
-  if (!r.ok) throw new Error("API error " + r.status);
-  return r.json();
+  const data = await res.json();
+  if (!res.ok) {
+    throw new Error((data.error && data.error.message) || "Something went wrong.");
+  }
+  const parts = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) || [];
+  return parts.map((p) => p.text || "").join("");
 }
 
-// ---------- Your notes (RAG) ----------
-async function loadKnowledge() {
-  if (!C.useKnowledge) return;
-  try {
-    const r = await fetch(C.knowledgeFile);
-    if (!r.ok) throw new Error("no notes");
-    const t = await r.text();
-    chunks = t.split(/\n(?=#)|\n{2,}/).map(s => s.trim()).filter(s => s.length > 40);
-  } catch (e) { chunks = []; }
-}
-async function embedAll(texts) {
-  const out = [];
-  for (let i = 0; i < texts.length; i += 100) {
-    const batch = texts.slice(i, i + 100);
-    const d = await api("models/" + C.embeddingModel + ":batchEmbedContents", {
-      requests: batch.map(t => ({ model: "models/" + C.embeddingModel, content: { parts: [{ text: t }] } }))
-    });
-    d.embeddings.forEach(e => out.push(e.values));
-  }
-  return out;
-}
-function cosine(a, b) {
-  let d = 0, x = 0, y = 0;
-  for (let i = 0; i < a.length; i++) { d += a[i] * b[i]; x += a[i] * a[i]; y += b[i] * b[i]; }
-  return d / Math.sqrt(x * y);
-}
-function keywordScore(q, c) {
-  const words = q.toLowerCase().match(/[a-z0-9]{3,}/g) || [];
-  const t = c.toLowerCase();
-  return words.reduce((s, w) => s + (t.includes(w) ? 1 : 0), 0);
-}
-async function findNotes(q) {
-  if (!chunks.length) return [];
-  let scores = null;
-  if (C.searchMethod === "meaning") {
-    try {
-      if (!chunkVectors) chunkVectors = await embedAll(chunks);
-      const qv = (await embedAll([q]))[0];
-      scores = chunkVectors.map(v => cosine(qv, v));
-    } catch (e) { scores = null; }
-  }
-  if (!scores) scores = chunks.map(c => keywordScore(q, c));
-  return scores
-    .map((s, i) => ({ s, i }))
-    .sort((a, b) => b.s - a.s)
-    .slice(0, C.topK)
-    .filter(x => x.s > 0)
-    .map(x => ({ text: chunks[x.i] }));
-}
-
-// ---------- Sending a message ----------
-async function send(text) {
+async function sendMessage(text) {
   text = text.trim();
-  if (busy || !text) return;
-  if (!C.API_KEY || C.API_KEY.startsWith("PASTE")) {
-    addMsg("bot", "The API key is missing. Please add it in config.js.");
-    return;
-  }
+  if (!text || busy) return;
+
+  startersEl.innerHTML = "";
+  addMessage("user", text);
+  history.push({ role: "user", parts: [{ text }] });
+  input.value = "";
   busy = true;
   sendBtn.disabled = true;
-  startersBox.style.display = "none";
-  addMsg("user", text);
-  const typing = addMsg("bot", "Thinking…");
+
+  const typing = showTyping();
   try {
-    let notes = [];
-    let sys = C.SYSTEM_PROMPT;
-    let userText = text;
-    if (C.useKnowledge) {
-      notes = await findNotes(text);
-      sys += "\n\n" + C.knowledgeRules;
-      if (notes.length) {
-        userText = "NOTES:\n" + notes.map((n, i) => "[" + (i + 1) + "] " + n.text).join("\n\n") + "\n\nSTUDENT MESSAGE: " + text;
-      }
-    }
-    const contents = history.slice(-18).concat([{ role: "user", parts: [{ text: userText }] }]);
-    const d = await api("models/" + C.MODEL + ":generateContent", {
-      systemInstruction: { parts: [{ text: sys }] },
-      contents: contents
-    });
-    let reply = ((d.candidates && d.candidates[0] && d.candidates[0].content && d.candidates[0].content.parts) || [])
-      .map(p => p.text || "").join("").trim();
-    if (!reply) throw new Error("empty reply");
-    const correct = /^\s*\[CORRECT\]/i.test(reply);
-    reply = reply.replace(/^\s*\[CORRECT\]\s*/i, "");
-    history.push({ role: "user", parts: [{ text: text }] });
+    let reply = await askGemini();
+    const correct = reply.includes("[CORRECT]");
+    reply = reply.replace(/\[CORRECT\]/g, "").trim();
+    typing.remove();
+    addMessage("bot", reply || "Hmm, I didn't get a reply. Try again?");
     history.push({ role: "model", parts: [{ text: reply }] });
+    if (correct) launchConfetti();
+  } catch (err) {
     typing.remove();
-    addMsg("bot", reply, notes);
-    if (correct) confetti();
-  } catch (e) {
-    typing.remove();
-    addMsg("bot", "Sorry, something went wrong (" + e.message + "). Please try again.");
-  } finally {
-    busy = false;
-    sendBtn.disabled = false;
-    input.focus();
+    history.pop();
+    addMessage("bot", "Oops, I couldn't answer: " + err.message);
+  }
+
+  busy = false;
+  sendBtn.disabled = false;
+  input.focus();
+}
+
+sendBtn.addEventListener("click", () => sendMessage(input.value));
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") sendMessage(input.value);
+});
+
+/* ---------- Confetti ---------- */
+let pieces = [];
+let confettiRunning = false;
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+function launchConfetti() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const colors = ["#ff5c9a", "#ffffff", "#ffd1e3", "#ffc93c", "#8ee3ef", "#b983ff"];
+  for (let i = 0; i < 160; i++) {
+    pieces.push({
+      x: Math.random() * canvas.width,
+      y: -20 - Math.random() * canvas.height * 0.4,
+      w: 6 + Math.random() * 6,
+      h: 8 + Math.random() * 8,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      speedY: 2 + Math.random() * 3.5,
+      speedX: -1.5 + Math.random() * 3,
+      angle: Math.random() * Math.PI * 2,
+      spin: -0.2 + Math.random() * 0.4
+    });
+  }
+  if (!confettiRunning) {
+    confettiRunning = true;
+    requestAnimationFrame(drawConfetti);
   }
 }
 
-// ---------- Start ----------
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  const t = input.value;
-  input.value = "";
-  send(t);
-});
-addMsg("bot", C.WELCOME);
-C.STARTERS.forEach(s => {
+function drawConfetti() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  pieces.forEach((p) => {
+    p.x += p.speedX;
+    p.y += p.speedY;
+    p.angle += p.spin;
+    ctx.save();
+    ctx.translate(p.x, p.y);
+    ctx.rotate(p.angle);
+    ctx.fillStyle = p.color;
+    ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+    ctx.restore();
+  });
+  pieces = pieces.filter((p) => p.y < canvas.height + 30);
+  if (pieces.length) {
+    requestAnimationFrame(drawConfetti);
+  } else {
+    confettiRunning = false;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+}
+
+/* ---------- Start ---------- */
+addMessage("bot", CONFIG.WELCOME);
+CONFIG.STARTERS.forEach((q) => {
   const b = document.createElement("button");
   b.type = "button";
-  b.textContent = s;
-  b.onclick = () => send(s);
-  startersBox.appendChild(b);
+  b.textContent = q;
+  b.addEventListener("click", () => sendMessage(q));
+  startersEl.appendChild(b);
 });
-loadKnowledge();
