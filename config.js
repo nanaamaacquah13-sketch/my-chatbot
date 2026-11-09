@@ -1,5 +1,6 @@
 const CONFIG = {
-  // No API key here. The key and model live on Netlify (see netlify/functions/chat.mjs).
+  // No API key in this file. Each person pastes their own key in the page (🔑 Key button).
+  MODEL: "gemini-3.8-flash",
 
   SYSTEM_PROMPT: `You are MedLearn, a friendly study buddy for students interested in health.
 Tone: friendly, encouraging, brief and professional.
