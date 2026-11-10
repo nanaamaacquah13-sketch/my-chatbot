@@ -106,7 +106,7 @@ function fallbackCopy(text, done) {
   area.remove();
 }
 
-function addMessage(role, text) {
+function addMessage(role, text, sources) {
   const wrap = document.createElement("div");
   wrap.className = "msg " + role;
 
@@ -114,6 +114,13 @@ function addMessage(role, text) {
   bubble.className = "bubble";
   bubble.innerHTML = formatText(text);
   wrap.appendChild(bubble);
+
+  if (sources && sources.length) {
+    const src = document.createElement("div");
+    src.className = "sources";
+    src.textContent = "Sources: " + sources.join(" \u00b7 ");
+    wrap.appendChild(src);
+  }
 
   if (role === "bot") {
     const copyBtn = document.createElement("button");
@@ -138,8 +145,114 @@ function showTyping() {
   return wrap;
 }
 
+/* ---------- Notes (knowledge.md) ---------- */
+let chunks = [];
+let docFreq = Object.create(null);
+
+const STOP = new Set(("and are but for from has have how into its that the their then there these they this was what when where which who why will with you your can does should would could about give tell").split(" "));
+
+function words(s) {
+  return (s.toLowerCase().match(/[a-z0-9]{3,}/g) || [])
+    .filter((w) => !STOP.has(w))
+    .map((w) => (w.length > 3 && w.endsWith("s") && !w.endsWith("ss") ? w.slice(0, -1) : w));
+}
+
+function splitNotes(md) {
+  const sections = [];
+  let title = "Notes";
+  let buf = [];
+  const flush = () => {
+    const body = buf.join("\n").trim();
+    if (body) sections.push({ title: title, body: body });
+    buf = [];
+  };
+  md.split(/\r?\n/).forEach((line) => {
+    const m = line.match(/^#{1,4}\s+(.*)/);
+    if (m) {
+      flush();
+      title = m[1].trim();
+    } else {
+      buf.push(line);
+    }
+  });
+  flush();
+
+  // cut long sections into pieces of about 1200 characters
+  const out = [];
+  sections.forEach((sec) => {
+    if (sec.body.length <= 1200) {
+      out.push(sec);
+      return;
+    }
+    let piece = "";
+    sec.body.split(/\n\s*\n/).forEach((par) => {
+      if (piece && (piece + par).length > 1200) {
+        out.push({ title: sec.title, body: piece.trim() });
+        piece = "";
+      }
+      piece += par + "\n\n";
+    });
+    if (piece.trim()) out.push({ title: sec.title, body: piece.trim() });
+  });
+  return out;
+}
+
+function indexNotes(list) {
+  docFreq = Object.create(null);
+  list.forEach((c) => {
+    c.counts = Object.create(null);
+    words(c.title + " " + c.title + " " + c.body).forEach((w) => {
+      c.counts[w] = (c.counts[w] || 0) + 1;
+    });
+    Object.keys(c.counts).forEach((w) => {
+      docFreq[w] = (docFreq[w] || 0) + 1;
+    });
+  });
+  return list;
+}
+
+function buildQuery(userText, botText) {
+  const q = Object.create(null);
+  words(botText || "").forEach((w) => { q[w] = 1; });
+  words(userText || "").forEach((w) => { q[w] = 3; });
+  return q;
+}
+
+function findNotes(query, k) {
+  k = k || 4;
+  const total = chunks.length;
+  if (!total) return [];
+  const scored = chunks.map((c) => {
+    let score = 0;
+    Object.keys(query).forEach((w) => {
+      const tf = c.counts[w];
+      if (tf) score += query[w] * (1 + Math.log(tf)) * Math.log(1 + total / docFreq[w]);
+    });
+    return { c: c, score: score };
+  });
+  scored.sort((a, b) => b.score - a.score);
+  const best = scored[0].score;
+  if (best <= 0) return [];
+  return scored.filter((s) => s.score >= best * 0.35).slice(0, k).map((s) => s.c);
+}
+
+async function loadNotes() {
+  try {
+    const res = await fetch("knowledge.md?t=" + Date.now());
+    if (!res.ok) return;
+    chunks = indexNotes(splitNotes(await res.text()));
+  } catch (e) {
+    chunks = [];
+  }
+}
+
 /* ---------- Gemini call ---------- */
-async function askGemini() {
+async function askGemini(notes) {
+  let system = CONFIG.SYSTEM_PROMPT;
+  if (notes.length) {
+    system += "\n\n" + CONFIG.NOTES_RULES + "\n\nNOTES:\n" +
+      notes.map((n, i) => "[" + (i + 1) + "] " + n.title + "\n" + n.body).join("\n\n");
+  }
   const url = "https://generativelanguage.googleapis.com/v1beta/models/" + CONFIG.MODEL + ":generateContent";
   const res = await fetch(url, {
     method: "POST",
@@ -148,7 +261,7 @@ async function askGemini() {
       "x-goog-api-key": getKey()
     },
     body: JSON.stringify({
-      systemInstruction: { parts: [{ text: CONFIG.SYSTEM_PROMPT }] },
+      systemInstruction: { parts: [{ text: system }] },
       contents: history
     })
   });
@@ -180,11 +293,22 @@ async function sendMessage(text) {
 
   const typing = showTyping();
   try {
-    let reply = await askGemini();
+    const lastBot = history.slice().reverse().find((m) => m.role === "model");
+    const notes = findNotes(buildQuery(text, lastBot ? lastBot.parts[0].text : ""));
+    let reply = await askGemini(notes);
     const correct = reply.includes("[CORRECT]");
     reply = reply.replace(/\[CORRECT\]/g, "").trim();
+
+    let sources = [];
+    const used = reply.match(/\[USED:\s*([\d,\s]+)\]/i);
+    if (used) {
+      const nums = used[1].split(",").map((x) => parseInt(x, 10)).filter((n) => n >= 1 && n <= notes.length);
+      sources = Array.from(new Set(nums.map((n) => notes[n - 1].title)));
+    }
+    reply = reply.replace(/\[USED:[^\]]*\]/gi, "").trim();
+
     typing.remove();
-    addMessage("bot", reply || "Hmm, I didn't get a reply. Try again?");
+    addMessage("bot", reply || "Hmm, I didn't get a reply. Try again?", sources);
     history.push({ role: "model", parts: [{ text: reply }] });
     if (correct) launchConfetti();
   } catch (err) {
@@ -266,4 +390,10 @@ CONFIG.STARTERS.forEach((q) => {
   b.textContent = q;
   b.addEventListener("click", () => sendMessage(q));
   startersEl.appendChild(b);
+});
+
+loadNotes().then(() => {
+  if (!chunks.length) {
+    addMessage("bot", "Heads up: I couldn't load knowledge.md, so I'll answer without your notes. Make sure the file is in the same folder as index.html.");
+  }
 });
