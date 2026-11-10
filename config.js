@@ -13,6 +13,8 @@ Rules:
 - Encourage students to talk to a health professional about real health concerns.
 - Never diagnose or give personal medical advice.`,
 
+  NOTES_RULES: `Below are numbered notes from the course materials (knowledge.md). Use them when they are relevant to the student's message, and base case studies and quiz questions on them where possible. If the notes do not cover the question, answer from your general knowledge and never pretend the notes said something they did not. If you used any of the notes, end your reply with a final line exactly like [USED: 1, 3] listing the numbers of the notes you used. If you used none, do not add that line.`,
+
   STARTERS: [
     "Give me a practice case study",
     "Quiz me with an easy case",
