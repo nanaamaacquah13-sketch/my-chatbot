@@ -123,6 +123,13 @@ input:focus-visible {
 }
 .copy-btn:hover { background: var(--bot-bubble); color: var(--text); }
 
+.sources {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
 .typing .bubble { color: var(--muted); font-style: italic; }
 
 .starters {
