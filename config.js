@@ -13,7 +13,13 @@ Rules:
 - Encourage students to talk to a health professional about real health concerns.
 - Never diagnose or give personal medical advice.`,
 
-  NOTES_RULES: `Below are numbered notes from the course materials (knowledge.md). Use them when they are relevant to the student's message, and base case studies and quiz questions on them where possible. If the notes do not cover the question, answer from your general knowledge and never pretend the notes said something they did not. If you used any of the notes, end your reply with a final line exactly like [USED: 1, 3] listing the numbers of the notes you used. If you used none, do not add that line.`,
+  NOTES_RULES: `Below are numbered notes from the course materials (knowledge.md). Use them when they are relevant to the student's message, and base case studies and quiz questions on them where possible. Never pretend the notes said something they did not. If you used any of the notes, end your reply with a final line exactly like [USED: 1, 3] listing the numbers of the notes you used. If you used none, do not add that line.`,
+
+  // Try Google Search when the answer is not in the notes. If your key can't use it, the bot
+  // automatically falls back to general knowledge and says so.
+  WEB_SEARCH: true,
+  OUTSIDE_WEB_PHRASE: "This isn't in my notes, but here's what I found on the internet:",
+  OUTSIDE_GENERAL_PHRASE: "This isn't in my notes, but here's what I know from general knowledge:",
 
   STARTERS: [
     "Give me a practice case study",
