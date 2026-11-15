@@ -130,6 +130,15 @@ input:focus-visible {
   overflow-wrap: anywhere;
 }
 
+.sources a { color: var(--accent); }
+
+.title { min-width: 0; }
+.notes-count {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
 .typing .bubble { color: var(--muted); font-style: italic; }
 
 .starters {
