@@ -1,3 +1,4 @@
+
 const chat = document.getElementById("chat");
 const input = document.getElementById("userInput");
 const sendBtn = document.getElementById("sendBtn");
@@ -8,6 +9,7 @@ const infoDialog = document.getElementById("infoDialog");
 const closeInfo = document.getElementById("closeInfo");
 const canvas = document.getElementById("confetti");
 const ctx = canvas.getContext("2d");
+const notesCount = document.getElementById("notesCount");
 
 let history = [];
 let busy = false;
@@ -106,7 +108,7 @@ function fallbackCopy(text, done) {
   area.remove();
 }
 
-function addMessage(role, text, sources) {
+function addMessage(role, text, sources, links) {
   const wrap = document.createElement("div");
   wrap.className = "msg " + role;
 
@@ -120,6 +122,22 @@ function addMessage(role, text, sources) {
     src.className = "sources";
     src.textContent = "Sources: " + sources.join(" \u00b7 ");
     wrap.appendChild(src);
+  }
+
+  if (links && links.length) {
+    const web = document.createElement("div");
+    web.className = "sources";
+    web.append("From the internet: ");
+    links.forEach((l, i) => {
+      if (i) web.append(" \u00b7 ");
+      const a = document.createElement("a");
+      a.href = l.uri;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = l.title;
+      web.appendChild(a);
+    });
+    wrap.appendChild(web);
   }
 
   if (role === "bot") {
@@ -163,7 +181,7 @@ function splitNotes(md) {
   let buf = [];
   const flush = () => {
     const body = buf.join("\n").trim();
-    if (body) sections.push({ title: title, body: body });
+    if (body) sections.push({ title: title, body: body, sec: sections.length });
     buf = [];
   };
   md.split(/\r?\n/).forEach((line) => {
@@ -187,12 +205,12 @@ function splitNotes(md) {
     let piece = "";
     sec.body.split(/\n\s*\n/).forEach((par) => {
       if (piece && (piece + par).length > 1200) {
-        out.push({ title: sec.title, body: piece.trim() });
+        out.push({ title: sec.title, body: piece.trim(), sec: sec.sec });
         piece = "";
       }
       piece += par + "\n\n";
     });
-    if (piece.trim()) out.push({ title: sec.title, body: piece.trim() });
+    if (piece.trim()) out.push({ title: sec.title, body: piece.trim(), sec: sec.sec });
   });
   return out;
 }
@@ -247,31 +265,70 @@ async function loadNotes() {
 }
 
 /* ---------- Gemini call ---------- */
-async function askGemini(notes) {
+let webBlocked = false;
+
+function buildSystem(notes, useSearch) {
   let system = CONFIG.SYSTEM_PROMPT;
   if (notes.length) {
     system += "\n\n" + CONFIG.NOTES_RULES + "\n\nNOTES:\n" +
       notes.map((n, i) => "[" + (i + 1) + "] " + n.title + "\n" + n.body).join("\n\n");
+  } else {
+    system += "\n\nNo course notes matched the student's latest message.";
   }
+  const phrase = useSearch ? CONFIG.OUTSIDE_WEB_PHRASE : CONFIG.OUTSIDE_GENERAL_PHRASE;
+  system += "\n\nOutside-the-notes rule: if the student asks a health or course question that is NOT covered by the notes (or no notes matched), begin your reply with exactly this sentence: \"" + phrase + "\" and then answer." +
+    (useSearch ? " Use Google Search to find the answer." : "") +
+    " Never use that sentence for greetings, small talk, or feedback on a quiz answer about a case that came from the notes.";
+  return system;
+}
+
+async function callGemini(system, useSearch) {
   const url = "https://generativelanguage.googleapis.com/v1beta/models/" + CONFIG.MODEL + ":generateContent";
+  const body = { systemInstruction: { parts: [{ text: system }] }, contents: history };
+  if (useSearch) body.tools = [{ google_search: {} }];
   const res = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       "x-goog-api-key": getKey()
     },
-    body: JSON.stringify({
-      systemInstruction: { parts: [{ text: system }] },
-      contents: history
-    })
+    body: JSON.stringify(body)
   });
   let data = {};
   try { data = await res.json(); } catch (e) {}
-  if (!res.ok) {
-    throw new Error((data.error && data.error.message) || "Something went wrong.");
+  return { res: res, data: data };
+}
+
+async function askGemini(notes) {
+  const useSearch = CONFIG.WEB_SEARCH && !webBlocked;
+  let out = await callGemini(buildSystem(notes, useSearch), useSearch);
+
+  // If web search isn't allowed for this key, retry without it and remember that
+  if (!out.res.ok && useSearch) {
+    const retry = await callGemini(buildSystem(notes, false), false);
+    if (retry.res.ok) webBlocked = true;
+    out = retry;
   }
-  const parts = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) || [];
-  return parts.map((p) => p.text || "").join("");
+
+  if (!out.res.ok) {
+    throw new Error((out.data.error && out.data.error.message) || "Something went wrong.");
+  }
+
+  const cand = out.data.candidates && out.data.candidates[0];
+  const parts = (cand && cand.content && cand.content.parts) || [];
+  const text = parts.map((p) => p.text || "").join("");
+
+  const found = (cand && cand.groundingMetadata && cand.groundingMetadata.groundingChunks) || [];
+  const links = [];
+  const seen = new Set();
+  found.forEach((g) => {
+    const w = g.web;
+    if (w && w.uri && /^https?:\/\//.test(w.uri) && !seen.has(w.title || w.uri)) {
+      seen.add(w.title || w.uri);
+      links.push({ uri: w.uri, title: w.title || w.uri });
+    }
+  });
+  return { text: text, links: links.slice(0, 4) };
 }
 
 async function sendMessage(text) {
@@ -295,7 +352,8 @@ async function sendMessage(text) {
   try {
     const lastBot = history.slice().reverse().find((m) => m.role === "model");
     const notes = findNotes(buildQuery(text, lastBot ? lastBot.parts[0].text : ""));
-    let reply = await askGemini(notes);
+    const result = await askGemini(notes);
+    let reply = result.text;
     const correct = reply.includes("[CORRECT]");
     reply = reply.replace(/\[CORRECT\]/g, "").trim();
 
@@ -307,8 +365,13 @@ async function sendMessage(text) {
     }
     reply = reply.replace(/\[USED:[^\]]*\]/gi, "").trim();
 
+    // only say "internet" when the answer really came with web sources
+    if (!result.links.length) {
+      reply = reply.replace(/found on the internet:/i, "know from general knowledge:");
+    }
+
     typing.remove();
-    addMessage("bot", reply || "Hmm, I didn't get a reply. Try again?", sources);
+    addMessage("bot", reply || "Hmm, I didn't get a reply. Try again?", sources, result.links);
     history.push({ role: "model", parts: [{ text: reply }] });
     if (correct) launchConfetti();
   } catch (err) {
@@ -393,6 +456,10 @@ CONFIG.STARTERS.forEach((q) => {
 });
 
 loadNotes().then(() => {
+  const count = new Set(chunks.map((c) => c.sec)).size;
+  notesCount.textContent = chunks.length
+    ? "📚 " + count + (count === 1 ? " section" : " sections") + " loaded from knowledge.md"
+    : "📚 No notes loaded";
   if (!chunks.length) {
     addMessage("bot", "Heads up: I couldn't load knowledge.md, so I'll answer without your notes. Make sure the file is in the same folder as index.html.");
   }
